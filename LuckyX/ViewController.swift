@@ -41,6 +41,7 @@ class ViewController: UIViewController,UICollectionViewDelegate,UICollectionView
     /**用来保存暂存的抽奖用户名*/
     var personForNow:[Person] = []
     var 🥉Colors = ["绿","红","黄","粉","蓝","紫"]
+    @IBOutlet private weak var lotteryTopConstraint: NSLayoutConstraint!
     @IBOutlet weak var animPlaceHolderView: UIView!
     
     @IBOutlet weak var personCollectionViewWidthConstraint: NSLayoutConstraint!
@@ -285,6 +286,13 @@ class ViewController: UIViewController,UICollectionViewDelegate,UICollectionView
     }
     
     
+    override func viewWillLayoutSubviews() {
+        super.viewWillLayoutSubviews()
+        // Move the entire stage down on larger iPads without covering the prize bar.
+        let maximumTop = view.bounds.height - view.safeAreaInsets.bottom - 174 - 516 - 24
+        lotteryTopConstraint.constant = max(104, min(184, maximumTop))
+    }
+
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         CATransaction.begin()

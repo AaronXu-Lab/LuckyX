@@ -1030,7 +1030,7 @@
                         <color key="backgroundColor" red="0.96470588235294119" green="0.96470588235294119" blue="0.96470588235294119" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="x2j-k1-72w" firstAttribute="bottom" secondItem="n8R-37-VkS" secondAttribute="top" constant="-4" id="4RO-Y6-npU"/>
-                            <constraint firstItem="JfX-Av-qv2" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="1:1.3" id="6qF-bM-fiw"/>
+                            <constraint firstItem="JfX-Av-qv2" firstAttribute="centerY" secondItem="n8R-37-VkS" secondAttribute="centerY" id="6qF-bM-fiw"/>
                             <constraint firstItem="And-gR-8Be" firstAttribute="centerY" secondItem="n8R-37-VkS" secondAttribute="centerY" id="6zJ-z1-dwy"/>
                             <constraint firstItem="Wsj-01-WIm" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="8Om-8o-kzl"/>
                             <constraint firstItem="n8R-37-VkS" firstAttribute="leading" secondItem="And-gR-8Be" secondAttribute="trailing" constant="63" id="8UZ-9F-4NN"/>
@@ -1089,6 +1089,7 @@
                         <outlet property="RightBtnSix" destination="2fs-s5-T7S" id="H81-Ue-4ai"/>
                         <outlet property="RightBtnThird" destination="mlG-oU-eFF" id="utg-fh-Cc4"/>
                         <outlet property="RightBtnTwo" destination="Zcg-8z-hkz" id="hX6-04-qup"/>
+                        <outlet property="lotteryTopConstraint" destination="9iU-vN-a54" id="lottery-top-outlet"/>
                         <outlet property="animPlaceHolderView" destination="n8R-37-VkS" id="0za-AX-JKA"/>
                         <outlet property="bottomPrizeCollectionView" destination="72g-8E-A7l" id="SbH-en-Zei"/>
                         <outlet property="current🎁Mode" destination="x2j-k1-72w" id="gaJ-am-kly"/>
