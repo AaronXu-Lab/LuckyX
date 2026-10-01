@@ -28,11 +28,11 @@ import Realm
 
  :nodoc:
  **/
-public final class ObjectiveCSupport {
+@frozen public struct ObjectiveCSupport {
 
     /// Convert a `Results` to a `RLMResults`.
     public static func convert<T>(object: Results<T>) -> RLMResults<AnyObject> {
-        return object.rlmResults
+        return object.collection as! RLMResults<AnyObject>
     }
 
     /// Convert a `RLMResults` to a `Results`.
@@ -42,17 +42,37 @@ public final class ObjectiveCSupport {
 
     /// Convert a `List` to a `RLMArray`.
     public static func convert<T>(object: List<T>) -> RLMArray<AnyObject> {
-        return object._rlmArray
+        return object.rlmArray
+    }
+
+    /// Convert a `MutableSet` to a `RLMSet`.
+    public static func convert<T>(object: MutableSet<T>) -> RLMSet<AnyObject> {
+        return object.rlmSet
     }
 
     /// Convert a `RLMArray` to a `List`.
     public static func convert(object: RLMArray<AnyObject>) -> List<Object> {
-        return List(rlmArray: object)
+        return List(collection: object)
+    }
+
+    /// Convert a `RLMSet` to a `MutableSet`.
+    public static func convert(object: RLMSet<AnyObject>) -> MutableSet<Object> {
+        return MutableSet(collection: object)
+    }
+
+    /// Convert a `Map` to a `RLMDictionary`.
+    public static func convert<Key, Value>(object: Map<Key, Value>) -> RLMDictionary<AnyObject, AnyObject> {
+        return object.rlmDictionary
+    }
+
+    /// Convert a `RLMDictionary` to a `Map`.
+    public static func convert<Key>(object: RLMDictionary<AnyObject, AnyObject>) -> Map<Key, Object> {
+        return Map(objc: object)
     }
 
     /// Convert a `LinkingObjects` to a `RLMResults`.
     public static func convert<T>(object: LinkingObjects<T>) -> RLMResults<AnyObject> {
-        return object.rlmResults
+        return object.collection as! RLMResults<AnyObject>
     }
 
     /// Convert a `RLMLinkingObjects` to a `Results`.
@@ -71,13 +91,9 @@ public final class ObjectiveCSupport {
     }
 
     /// Convert a `Migration` to a `RLMMigration`.
+    @available(*, deprecated, message: "This function is now redundant")
     public static func convert(object: Migration) -> RLMMigration {
-        return object.rlmMigration
-    }
-
-    /// Convert a `RLMMigration` to a `Migration`.
-    public static func convert(object: RLMMigration) -> Migration {
-        return Migration(object)
+        return object
     }
 
     /// Convert a `ObjectSchema` to a `RLMObjectSchema`.
@@ -130,37 +146,19 @@ public final class ObjectiveCSupport {
         return SortDescriptor(keyPath: object.keyPath, ascending: object.ascending)
     }
 
-    /// Convert a `SyncCredentials` to a `RLMSyncCredentials`.
-    public static func convert(object: SyncCredentials) -> RLMSyncCredentials {
-        return RLMSyncCredentials(object)
-    }
-
-    /// Convert a `RLMSyncCredentials` to a `SyncCredentials`.
-    public static func convert(object: RLMSyncCredentials) -> SyncCredentials {
-        return SyncCredentials(object)
-    }
-
     /// Convert a `RLMShouldCompactOnLaunchBlock` to a Realm Swift compact block.
-    public static func convert(object: @escaping RLMShouldCompactOnLaunchBlock) -> (Int, Int) -> Bool {
+    @preconcurrency
+    public static func convert(object: @escaping RLMShouldCompactOnLaunchBlock) -> @Sendable (Int, Int) -> Bool {
         return { totalBytes, usedBytes in
             return object(UInt(totalBytes), UInt(usedBytes))
         }
     }
 
     /// Convert a Realm Swift compact block to a `RLMShouldCompactOnLaunchBlock`.
-    public static func convert(object: @escaping (Int, Int) -> Bool) -> RLMShouldCompactOnLaunchBlock {
+    @preconcurrency
+    public static func convert(object: @Sendable @escaping (Int, Int) -> Bool) -> RLMShouldCompactOnLaunchBlock {
         return { totalBytes, usedBytes in
             return object(Int(totalBytes), Int(usedBytes))
         }
-    }
-
-    /// Convert a `SyncConfiguration` to a `RLMSyncConfiguration`.
-    public static func convert(object: SyncConfiguration) -> RLMSyncConfiguration {
-        return object.asConfig()
-    }
-
-    /// Convert a `RLMSyncConfiguration` to a `SyncConfiguration`.
-    public static func convert(object: RLMSyncConfiguration) -> SyncConfiguration {
-        return SyncConfiguration(config: object)
     }
 }

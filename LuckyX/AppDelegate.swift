@@ -8,7 +8,7 @@
 
 import UIKit
 
-@UIApplicationMain
+@main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
@@ -45,3 +45,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 }
 
+
+// The storyboard supplies the window and root controller for this scene.
+class SceneDelegate: UIResponder, UIWindowSceneDelegate {
+    var window: UIWindow?
+}

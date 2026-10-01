@@ -1,38 +1,30 @@
 PODS:
-  - AVOSCloud (11.4.4)
-  - JXPopupView (0.0.3)
   - lottie-ios (2.5.2)
   - Popover (1.2.0)
-  - Realm (3.11.1):
-    - Realm/Headers (= 3.11.1)
-  - Realm/Headers (3.11.1)
-  - RealmSwift (3.11.1):
-    - Realm (= 3.11.1)
+  - Realm (20.0.6):
+    - Realm/Headers (= 20.0.6)
+  - Realm/Headers (20.0.6)
+  - RealmSwift (20.0.6):
+    - Realm (= 20.0.6)
 
 DEPENDENCIES:
-  - AVOSCloud
-  - JXPopupView
-  - lottie-ios
-  - Popover
-  - RealmSwift
+  - lottie-ios (= 2.5.2)
+  - Popover (= 1.2.0)
+  - RealmSwift (~> 20.0)
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
-    - AVOSCloud
-    - JXPopupView
+  trunk:
     - lottie-ios
     - Popover
     - Realm
     - RealmSwift
 
 SPEC CHECKSUMS:
-  AVOSCloud: c3d6ce6d387d7e40c7c0fe4087c6ad5192620f47
-  JXPopupView: 7e433344caeb09ed08327f370f53cf597389c2b7
   lottie-ios: 3fef45d3fabe63e3c7c2eb603dd64ddfffc73062
   Popover: 28c1ac8e937ab2b3965bd2da7dd18324357abc41
-  Realm: 037c5919b9ceb59d6beed5d3b031096856b119b3
-  RealmSwift: c9580133e73ef40ed340401af2dbc9a5790dfea7
+  Realm: e63b3586386f7ab655dc890a9d0878870ebb1837
+  RealmSwift: 7955ebe63fa6e46cdaea394fa17758d1028dd594
 
-PODFILE CHECKSUM: 08f0f1384f5b13761b48dd50860d875b3bd9fbe2
+PODFILE CHECKSUM: bd93f9e8ae1a935094811659a5b66d736f041849
 
-COCOAPODS: 1.5.3
+COCOAPODS: 1.17.0
