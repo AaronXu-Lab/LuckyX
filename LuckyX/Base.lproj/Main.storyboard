@@ -990,7 +990,7 @@
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button hidden="YES" opaque="NO" alpha="0.0" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="Drs-n2-PRz">
+                            <button hidden="YES" opaque="NO" alpha="0.0" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="Drs-n2-PRz">
                                 <rect key="frame" x="236" y="134" width="640" height="360"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
@@ -1009,7 +1009,7 @@
                                     <action selector="lotteryModeSettingAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xTi-gE-GeI"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ylE-AC-QeG">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ylE-AC-QeG">
                                 <rect key="frame" x="236" y="134" width="640" height="360"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -1019,7 +1019,7 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hcO-SL-Eq6">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hcO-SL-Eq6">
                                 <rect key="frame" x="544" y="511" width="25" height="26"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
@@ -1034,9 +1034,21 @@
                             <constraint firstItem="And-gR-8Be" firstAttribute="centerY" secondItem="n8R-37-VkS" secondAttribute="centerY" id="6zJ-z1-dwy"/>
                             <constraint firstItem="Wsj-01-WIm" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="8Om-8o-kzl"/>
                             <constraint firstItem="n8R-37-VkS" firstAttribute="leading" secondItem="And-gR-8Be" secondAttribute="trailing" constant="63" id="8UZ-9F-4NN"/>
+                            <constraint firstItem="ylE-AC-QeG" firstAttribute="leading" secondItem="n8R-37-VkS" secondAttribute="leading" id="ylE-AC-QeG-leading"/>
+                            <constraint firstItem="ylE-AC-QeG" firstAttribute="trailing" secondItem="n8R-37-VkS" secondAttribute="trailing" id="ylE-AC-QeG-trailing"/>
+                            <constraint firstItem="ylE-AC-QeG" firstAttribute="top" secondItem="n8R-37-VkS" secondAttribute="top" id="ylE-AC-QeG-top"/>
+                            <constraint firstItem="ylE-AC-QeG" firstAttribute="bottom" secondItem="n8R-37-VkS" secondAttribute="bottom" id="ylE-AC-QeG-bottom"/>
+                            <constraint firstItem="Drs-n2-PRz" firstAttribute="leading" secondItem="n8R-37-VkS" secondAttribute="leading" id="Drs-n2-PRz-leading"/>
+                            <constraint firstItem="Drs-n2-PRz" firstAttribute="trailing" secondItem="n8R-37-VkS" secondAttribute="trailing" id="Drs-n2-PRz-trailing"/>
+                            <constraint firstItem="Drs-n2-PRz" firstAttribute="top" secondItem="n8R-37-VkS" secondAttribute="top" id="Drs-n2-PRz-top"/>
+                            <constraint firstItem="Drs-n2-PRz" firstAttribute="bottom" secondItem="n8R-37-VkS" secondAttribute="bottom" id="Drs-n2-PRz-bottom"/>
+                            <constraint firstItem="hcO-SL-Eq6" firstAttribute="centerX" secondItem="n8R-37-VkS" secondAttribute="centerX" id="wish-center"/>
+                            <constraint firstItem="hcO-SL-Eq6" firstAttribute="top" secondItem="n8R-37-VkS" secondAttribute="bottom" constant="17" id="wish-top"/>
+                            <constraint firstItem="hcO-SL-Eq6" firstAttribute="width" constant="25" id="wish-width"/>
+                            <constraint firstItem="hcO-SL-Eq6" firstAttribute="height" constant="26" id="wish-height"/>
                             <constraint firstItem="Wsj-01-WIm" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="104" id="9iU-vN-a54"/>
                             <constraint firstItem="azB-WO-oBO" firstAttribute="leading" secondItem="n8R-37-VkS" secondAttribute="trailing" constant="63" id="9mW-Z8-sLH"/>
-                            <constraint firstItem="Wsj-01-WIm" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="trailing" constant="-895" id="Cdq-pd-EAR"/>
+                            <constraint firstItem="Wsj-01-WIm" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Cdq-pd-EAR"/>
                             <constraint firstItem="Zth-PI-ERh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="DKj-GH-5Nw"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Qth-UI-dam" secondAttribute="trailing" id="JLT-DT-fkJ"/>
                             <constraint firstItem="Qth-UI-dam" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="JSq-OC-eDs"/>

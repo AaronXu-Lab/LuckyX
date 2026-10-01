@@ -34,6 +34,8 @@ class ViewController: UIViewController,UICollectionViewDelegate,UICollectionView
     var current🎁 = "无奖品"
     @IBOutlet var current🎁Mode:UILabel!
     var current🎨 = "全"
+    private let playerLayer = AVPlayerLayer()
+    private var revealedPeople = Set<Int>()
     var player = AVPlayer()
     var playerItem = AVPlayerItem(url: URL(fileURLWithPath: Bundle.main.path(forResource: "抽颜色方阵动画", ofType: "mp4")!))
     /**用来保存暂存的抽奖用户名*/
@@ -97,8 +99,7 @@ class ViewController: UIViewController,UICollectionViewDelegate,UICollectionView
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath) as! PrizeCell
             //如果奖品数为1，则不显示数量
             cell.textLabel.text = "\(bottomPrizes[indexPath.row].name)\(bottomPrizes[indexPath.row].number == 1 ? "" : " × \(bottomPrizes[indexPath.row].number)")"
-            cell.prizeImageView.imageFromURL(bottomPrizes[indexPath.row].imageUrl, placeholder: UIImage.init(named: "OPPO")!, fadeIn: true, shouldCacheImage: true) { (image) in
-            }
+            cell.loadImage(url: bottomPrizes[indexPath.row].imageUrl, prizeName: bottomPrizes[indexPath.row].name)
             cell.selectMask.isHidden = !bottomPrizes[indexPath.row].isSelectd
             return cell
             
@@ -125,7 +126,7 @@ class ViewController: UIViewController,UICollectionViewDelegate,UICollectionView
             }else{
                 cell.goldEggImage.image = UIImage(named: "金蛋")
             }
-            cell.unsmash()
+            if revealedPeople.contains(tempPerson.number) { cell.smash() } else { cell.unsmash() }
             
             return cell
         }
@@ -187,33 +188,38 @@ class ViewController: UIViewController,UICollectionViewDelegate,UICollectionView
                 self.present(alertController, animated: true, completion: nil)
                 return
             }else{
-                (collectionView.cellForItem(at: indexPath) as! PersonCell).smash()
-                let realm = try! Realm()
-                try! realm.write {
-                    personForNow[indexPath.row].isAvailable = false
-                }
-                //写入奖品，如果是特等奖，1.更新当前心愿2.判断特等奖中奖用户是不是已经中过奖了，如果中过奖了那么更新一下。
-                if current🎁Mode.text == "特等奖"{
-                    currentWish = personForNow[indexPath.row].wish
-                    let realm = try! Realm()
-                    let tempResult = realm.objects(Prize.self).filter("masterNumber = \(personForNow[indexPath.row].number)")
-                    if tempResult.count != 0{
-                        try! realm.write {
-                            tempResult.first?.name = (tempResult.first?.name)! + " + 心愿大奖"
-                        }
-                        return
-                    }
-                }
-                let prize = Prize()
-                prize.name = current🎁
-                prize.masterNumber = personForNow[indexPath.row].number
-                try! realm.write {
-                    realm.add(prize)
+                let person = personForNow[indexPath.row]
+                do {
+                    guard try recordWinner(person, prizeName: current🎁, isWish: current🎁Mode.text == "特等奖") else { return }
+                    (collectionView.cellForItem(at: indexPath) as? PersonCell)?.smash()
+                    if current🎁Mode.text == "特等奖" { currentWish = person.wish }
+                } catch {
+                    let alert = UIAlertController(title: "保存中奖结果失败", message: error.localizedDescription, preferredStyle: .alert)
+                    alert.addAction(UIAlertAction(title: "好的", style: .default))
+                    present(alert, animated: true)
                 }
             }
         }
     }
     
+    @discardableResult
+    func recordWinner(_ person: Person, prizeName: String, isWish: Bool = false) throws -> Bool {
+        guard let realm = person.realm, !revealedPeople.contains(person.number) else { return false }
+        try realm.write {
+            person.isAvailable = false
+            if isWish, let prize = realm.objects(Prize.self).filter("masterNumber = %d", person.number).first {
+                prize.name += " + 心愿大奖"
+            } else {
+                let prize = Prize()
+                prize.name = prizeName
+                prize.masterNumber = person.number
+                realm.add(prize)
+            }
+        }
+        revealedPeople.insert(person.number)
+        return true
+    }
+
     @IBAction func lotteryModeSettingAction(_ sender: UIButton) {
         self.navigationController?.pushViewController((self.storyboard?.instantiateViewController(withIdentifier: "LotteryModeSetting"))!, animated: true);
     }
@@ -223,7 +229,7 @@ class ViewController: UIViewController,UICollectionViewDelegate,UICollectionView
         if personForNow.count>0{
             let realm = try! Realm()
             var tempBtnStr = ""
-            for i in 0..<11{
+            for i in 0..<min(11, personForNow.count){
                 let tempPerson = personForNow.removeFirst()
                 try! realm.write {
                     tempPerson.isAvailable = false
@@ -264,7 +270,7 @@ class ViewController: UIViewController,UICollectionViewDelegate,UICollectionView
         player.rate = 1.0//播放速度 播放前设置
         player.pause()
         //创建显示视频的图层
-        let playerLayer = AVPlayerLayer.init(player: player)
+        playerLayer.player = player
         playerLayer.videoGravity = .resizeAspect
         playerLayer.frame = self.animPlaceHolderView.bounds
         //playerLayer.position = self.animPlaceHolderView.layer.position
@@ -279,6 +285,14 @@ class ViewController: UIViewController,UICollectionViewDelegate,UICollectionView
     }
     
     
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        CATransaction.begin()
+        CATransaction.setDisableActions(true)
+        playerLayer.frame = animPlaceHolderView.bounds
+        CATransaction.commit()
+    }
+
     @IBAction func sideBtnsSelect(_ sender: UIButton?) {
         //如果传进来一个空值，那么说明要清空右侧的颜色按钮
         if sender == nil{
@@ -516,6 +530,7 @@ class ViewController: UIViewController,UICollectionViewDelegate,UICollectionView
         
         //移除金蛋数组
         personForNow.removeAll()
+        currentWish = "当前心愿"
         
         switch current🎁Mode.text {
         case "三等奖":
@@ -523,9 +538,7 @@ class ViewController: UIViewController,UICollectionViewDelegate,UICollectionView
             if 🥉Colors.count <= 0{
                 🥉Colors = ["绿","红","黄","粉","蓝","紫"]
             }
-            🥉Colors.sort { (str1, str2) -> Bool in
-                return arc4random() % 2 > 0
-            }
+            🥉Colors.shuffle()
             let tempColor = 🥉Colors.removeFirst()
             //抽取中奖用户
             let resultPersons = newGetSomeLuckyBitchsByColor(number: 3, color: tempColor)
@@ -560,6 +573,13 @@ class ViewController: UIViewController,UICollectionViewDelegate,UICollectionView
         default:
             break
         }
+        personForNow.removeAll { $0.realm == nil }
+        revealedPeople.removeAll()
+        if personForNow.isEmpty {
+            let alert = UIAlertController(title: "没有可抽取的人员", message: "请检查名单及所选颜色，或确认人员是否已经中奖。", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "好的", style: .default))
+            present(alert, animated: true)
+        }
         eggPersonCollectionView.reloadData()
     }
     
@@ -574,9 +594,7 @@ class ViewController: UIViewController,UICollectionViewDelegate,UICollectionView
             tempPerson.number = 10000000
             return tempPerson
         }
-        var availablePersonArray = availablePerson.sorted { (person1, person2) -> Bool in
-            return arc4random() % 2 > 0
-        }
+        var availablePersonArray = Array(availablePerson).shuffled()
         let luckyperson = availablePersonArray.removeFirst()
         print(luckyperson.name)
         return luckyperson
@@ -595,9 +613,7 @@ class ViewController: UIViewController,UICollectionViewDelegate,UICollectionView
             tempPerson.number = 10000000
             return tempPerson
         }
-        var availablePersonArray = availablePerson.sorted { (person1, person2) -> Bool in
-            return arc4random() % 2 > 0
-        }
+        var availablePersonArray = Array(availablePerson).shuffled()
         let luckyperson = availablePersonArray.removeFirst()
         print(luckyperson.name)
         return luckyperson
@@ -605,41 +621,12 @@ class ViewController: UIViewController,UICollectionViewDelegate,UICollectionView
     /**直接访问数据库抽取number个数据实例，不做其他处理*/
     func newGetSomeLuckyBitchs(number:Int)->[Person]{
         let realm = try! Realm()
-        var returnPersons:[Person] = []
-        for _ in 0..<number{
-            let tempPerson = newGetALuckyBitch()
-            try! realm.write {
-                tempPerson.isAvailable = false
-            }
-            returnPersons.append(tempPerson)
-        }
-        for person in returnPersons{
-            try! realm.write {
-                person.isAvailable = true
-            }
-        }
-        return returnPersons
+        return Array(Array(realm.objects(Person.self).filter("isAvailable = true")).shuffled().prefix(number))
     }
-    /**直接访问数据库依据颜色抽取number个数据实例，不做其他处理*/
-    func newGetSomeLuckyBitchsByColor(number:Int,color:String)->[Person]{
-        if color == "全"{
-            return newGetSomeLuckyBitchs(number: number)
-        }
+    func newGetSomeLuckyBitchsByColor(number: Int, color: String) -> [Person] {
+        if color == "全" { return newGetSomeLuckyBitchs(number: number) }
         let realm = try! Realm()
-        var returnPersons:[Person] = []
-        for _ in 0..<number{
-            let tempPerson = newGetALuckyBitchByColor(color: color)
-            try! realm.write {
-                tempPerson.isAvailable = false
-            }
-            returnPersons.append(tempPerson)
-        }
-        for person in returnPersons{
-            try! realm.write {
-                person.isAvailable = true
-            }
-        }
-        return returnPersons
+        return Array(Array(realm.objects(Person.self).filter("isAvailable = true AND color = %@", color)).shuffled().prefix(number))
     }
     /**直接访问数据库从填写了心愿的用户中抽取一个有心愿的数据实例*/
     func newGetALuckyBitchHasWish()->Person{
@@ -653,9 +640,7 @@ class ViewController: UIViewController,UICollectionViewDelegate,UICollectionView
             tempPerson.number = 10000000
             return tempPerson
         }
-        var availablePersonArray = availablePerson.sorted { (person1, person2) -> Bool in
-            return arc4random() % 2 > 0
-        }
+        var availablePersonArray = Array(availablePerson).shuffled()
         let luckyperson = availablePersonArray.removeFirst()
         return luckyperson
     }
@@ -665,6 +650,7 @@ class ViewController: UIViewController,UICollectionViewDelegate,UICollectionView
         
         let getPictureFromLibraryButton = UIAlertAction(title: "开始抽取", style:.destructive){ (action) in
             let tempPerson = self.newGetALuckyBitch()
+            guard tempPerson.realm != nil else { return }
             let kongRongResultAlert = UIAlertController(title: "随机抽取", message: "\(tempPerson.color)色方阵的\(tempPerson.name)\(tempPerson.name == "周璇" ? "(\(tempPerson.number))" : "")中奖了！", preferredStyle: .alert)
             let kongRongResultAlertCancel = UIAlertAction(title: "这个不要", style: .cancel, handler: nil)
             let kongRongResultAlertSure = UIAlertAction(title: "就这个", style: .default, handler: { (action) in

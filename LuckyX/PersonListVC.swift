@@ -147,7 +147,7 @@ class PersonListVC: UIViewController,UITableViewDataSource,UITableViewDelegate {
             let realm = try! Realm()
             let tempNumber = rightPersons![indexPath.row].number
             let tempPrize = realm.objects(Prize.self).filter("masterNumber = \(tempNumber)").first
-            cell.prize.text = tempPrize!.name
+            cell.prize.text = tempPrize?.name ?? "中奖记录缺失"
             return cell
         }
     }
@@ -164,9 +164,9 @@ class PersonListVC: UIViewController,UITableViewDataSource,UITableViewDelegate {
                     self.rightPersons![indexPath.row].isAvailable = true
                 }
                 //删除奖品数据库中的条目
-                var tempPrize = realm.objects(Prize.self).filter("masterNumber = \(self.rightPersons![indexPath.row].number)").first
+                let tempPrizes = realm.objects(Prize.self).filter("masterNumber = %d", self.rightPersons![indexPath.row].number)
                 try! realm.write {
-                    realm.delete(tempPrize!)
+                    realm.delete(tempPrizes)
                 }
                 self.initTwoLists()
                 self.leftTableView.reloadData()

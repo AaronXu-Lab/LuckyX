@@ -10,6 +10,10 @@ target 'LuckyX' do
   pod 'lottie-ios', '2.5.2'
   pod 'Popover', '1.2.0'
 
+  target 'LuckyXTests' do
+    inherit! :search_paths
+  end
+
 end
 
 post_install do |installer|

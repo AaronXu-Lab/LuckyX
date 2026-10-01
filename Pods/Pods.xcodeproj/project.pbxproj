@@ -68,6 +68,7 @@
 		2CDA12AA310AB41F8B4E201AB6F43EF3 /* CollectionAccess.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED7EFDAFD827F0D7304F5B92FF7CD01B /* CollectionAccess.swift */; };
 		2D2B96B84D028B8AC3D183B1979C4162 /* RLMRealmConfiguration.h in Copy . Public Headers */ = {isa = PBXBuildFile; fileRef = 7EAF9CE1405CAFF252AC7894A6C83BA9 /* RLMRealmConfiguration.h */; };
 		2DCE5E721E5A50D6BFF1441760B7C4D3 /* RLMValue.mm in Sources */ = {isa = PBXBuildFile; fileRef = 00121E71B86A1EEA47E6A80076A79917 /* RLMValue.mm */; settings = {COMPILER_FLAGS = "-DREALM_HAVE_CONFIG -DREALM_COCOA_VERSION='@\"20.0.6\"' -D__ASSERTMACROS__"; }; };
+		2E8BE78B15288876C495206EF098BC28 /* Pods-LuckyXTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B8B188882A01DECB434653F79325DE17 /* Pods-LuckyXTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2F9A8D2F4349FE85402F560EFD16E269 /* RLMObjectStore.h in Copy . Private Headers */ = {isa = PBXBuildFile; fileRef = 095B9838486B29F5C05D35A8F0A9D89F /* RLMObjectStore.h */; };
 		300EE1506AA952DB6D051683FD70A7A3 /* RLMThreadSafeReference.h in Copy . Public Headers */ = {isa = PBXBuildFile; fileRef = 4B73B12CAF901CCC05DA76C20E2638C7 /* RLMThreadSafeReference.h */; };
 		31A929183D194ABD5220E4C6F0E969A2 /* RLMSwiftProperty.h in Copy . Private Headers */ = {isa = PBXBuildFile; fileRef = 12094715F0DB501C007E542CE4770F6C /* RLMSwiftProperty.h */; };
@@ -157,6 +158,7 @@
 		719471C3C013F30B23FC07FC659BF38A /* RLMObject.h in Copy . Public Headers */ = {isa = PBXBuildFile; fileRef = 7F2154B4B90DA4C3E19CB377C78B3D6B /* RLMObject.h */; };
 		7314ACEFE1BE6F3FB1D64C5452700001 /* LOTCircleAnimator.h in Headers */ = {isa = PBXBuildFile; fileRef = C463B74511D9BD512E71618CC1930CB7 /* LOTCircleAnimator.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		73EB68C4986A343EEAA377CF3BA9F2F2 /* RLMError.mm in Sources */ = {isa = PBXBuildFile; fileRef = B802444D9D7F774F0AE68F0DFB6BC396 /* RLMError.mm */; settings = {COMPILER_FLAGS = "-DREALM_HAVE_CONFIG -DREALM_COCOA_VERSION='@\"20.0.6\"' -D__ASSERTMACROS__"; }; };
+		745CC301A00EE010C859F6493ED483D6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2A631CE7C3AEAE1ED080521B9F2AD47 /* Foundation.framework */; };
 		749CD3E86B5661E73A6A43A72ACB543F /* LOTValueDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 103693E1C9EE956C3D973BD2284DE26E /* LOTValueDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		75EC63F4523592310C03410EB058A66F /* LOTFillRenderer.h in Headers */ = {isa = PBXBuildFile; fileRef = D68E4DD5DF65B55414A94EC019B60925 /* LOTFillRenderer.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		775819B312B5C01D8B031F3E8C53405E /* LOTRoundedRectAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = B35A8339D36AD0B7C76E9610855B5391 /* LOTRoundedRectAnimator.m */; };
@@ -183,7 +185,7 @@
 		80F214531BA5F9E35DAEA0F39FD59BE3 /* CGGeometry+LOTAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 35676D30CB6AB7FAC194B1FFF64A032E /* CGGeometry+LOTAdditions.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		812BF310A607619B68E8B90897160CCD /* Query.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6301E9DD09EF06822E2499FD3A20376E /* Query.swift */; };
 		8146209081EDA72C359252A847843B60 /* LOTShapePath.h in Headers */ = {isa = PBXBuildFile; fileRef = 425BC70E667EE21BE1E056B3D4578A0B /* LOTShapePath.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		81C9B333C260A9BC4303334FC9AB8C54 /* Pods-LuckyX-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B4ECD14C2B26A3033DAD4D79DBB3175A /* Pods-LuckyX-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		81C9B333C260A9BC4303334FC9AB8C54 /* Pods-LuckyX-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CF86A18E595CBC75AE3C10A9322C5ADC /* Pods-LuckyX-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		821B6C548FD7A3625AF994ED93799CAD /* RLMObjectSchema_Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A8C570EB54F1D7C9D26F2B43FADDF52 /* RLMObjectSchema_Private.h */; };
 		826D252C793569AB57142B7C02677E3D /* LOTShapePath.m in Sources */ = {isa = PBXBuildFile; fileRef = D687E0B34C7D2E68F452499D61C9B7F8 /* LOTShapePath.m */; };
 		847FA9AA4C34F062B85C28BFDA69B354 /* RLMDecimal128.mm in Sources */ = {isa = PBXBuildFile; fileRef = 25BC439A06F9EEC62D088251B8529FA3 /* RLMDecimal128.mm */; settings = {COMPILER_FLAGS = "-DREALM_HAVE_CONFIG -DREALM_COCOA_VERSION='@\"20.0.6\"' -D__ASSERTMACROS__"; }; };
@@ -191,7 +193,7 @@
 		89C146F3C70A836BE5479743384BBAA9 /* RLMRealm.h in Copy . Public Headers */ = {isa = PBXBuildFile; fileRef = 92E40900CC626707B46D87033053D76F /* RLMRealm.h */; };
 		8B2032A1A2AA3B1785ED438657C2066C /* RLMSet_Private.h in Headers */ = {isa = PBXBuildFile; fileRef = A890BEF960B42307090B78FE602C1926 /* RLMSet_Private.h */; };
 		8B4B2774750B71AF831DEEAD6EFF6052 /* Optional.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B3602B6338F831A7510CF7D0BB8471 /* Optional.swift */; };
-		8B5CF898A679DCE7FB55CAE36D79DBCB /* Pods-LuckyX-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A1BC765E16F2C5D65BB4233B2D54CB1 /* Pods-LuckyX-dummy.m */; };
+		8B5CF898A679DCE7FB55CAE36D79DBCB /* Pods-LuckyX-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B075D55896B4D079DFFADA034F49149 /* Pods-LuckyX-dummy.m */; };
 		8C376F354A0FCB01699FCE707ACBCE63 /* LOTComposition.h in Headers */ = {isa = PBXBuildFile; fileRef = 9AB3F762193010C156DEE34DB7297E2F /* LOTComposition.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8D4218404553C0A66A4E3FE6FA005FC8 /* EmbeddedObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 156FA867669D4B93F30CDD60D832E303 /* EmbeddedObject.swift */; };
 		8E6CC91EB6D25DED014BADE98A9BD9DD /* RLMScheduler.h in Headers */ = {isa = PBXBuildFile; fileRef = B141311D23CA2746F0618A7CA1620E10 /* RLMScheduler.h */; };
@@ -283,6 +285,7 @@
 		D83E395C9E4B7B12DF934641057B9110 /* Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8811DB9E577A7C33FABAC6DC191AF569 /* Schema.swift */; };
 		D860F62E010E140C591C160E40AABDBA /* RLMSwiftSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = BF70B0270CCBA498DECC7D4813B26C84 /* RLMSwiftSupport.m */; settings = {COMPILER_FLAGS = "-DREALM_HAVE_CONFIG -DREALM_COCOA_VERSION='@\"20.0.6\"' -D__ASSERTMACROS__"; }; };
 		D893B1550E80C202B2F065B6C9F4DE0A /* Geospatial.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6A4EE7612C209731464E642B8342DD /* Geospatial.swift */; };
+		D95744C9961B126FC9651DE693791A91 /* Pods-LuckyXTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A5DA7E623B647A8E571F0342881513AF /* Pods-LuckyXTests-dummy.m */; };
 		D98EF7B5069192A711D6BD1D72A26EB9 /* LOTAnimationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 861B78D2F23465A51D8AB58875EF42EB /* LOTAnimationView.m */; };
 		DA4D3DD771E094F08C7B1DC630967183 /* LOTShapeCircle.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C7F9EDD207B751383EA242F723C5B72 /* LOTShapeCircle.m */; };
 		DAEC551540F2A880565E7ADED9C0B13A /* LOTRoundedRectAnimator.h in Headers */ = {isa = PBXBuildFile; fileRef = 15F867157E93A94BDBACC87A2B111147 /* LOTRoundedRectAnimator.h */; settings = {ATTRIBUTES = (Project, ); }; };
@@ -382,6 +385,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = D8F7D719B6671C5E3A6851AFBAF78574;
 			remoteInfo = "Realm-realm_objc_privacy";
+		};
+		ACED0A38429D723B8CAAD0E3544229A0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8716F8ED55732566F7C5C61EF2A2A6CD;
+			remoteInfo = "Pods-LuckyX";
 		};
 		EB55AA1BEA4E096416E57824439D55EA /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -486,13 +496,16 @@
 		103693E1C9EE956C3D973BD2284DE26E /* LOTValueDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LOTValueDelegate.h; path = "lottie-ios/Classes/PublicHeaders/LOTValueDelegate.h"; sourceTree = "<group>"; };
 		12094715F0DB501C007E542CE4770F6C /* RLMSwiftProperty.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RLMSwiftProperty.h; path = include/RLMSwiftProperty.h; sourceTree = "<group>"; };
 		13B3FD3121426D2158C4C9C0BE4B293A /* RLMObjectStore.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = RLMObjectStore.mm; path = Realm/RLMObjectStore.mm; sourceTree = "<group>"; };
+		148266F231DC81C732C8F37A34586149 /* Pods-LuckyXTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LuckyXTests-acknowledgements.plist"; sourceTree = "<group>"; };
 		14AABA82342CCE488A54FDDA4B897771 /* RLMProperty.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RLMProperty.h; path = include/RLMProperty.h; sourceTree = "<group>"; };
 		14C942468A390C95E380E4E3970D835D /* BasicTypes.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BasicTypes.swift; path = RealmSwift/Impl/BasicTypes.swift; sourceTree = "<group>"; };
+		156543322A8DF18E9E78F57B20EA12A2 /* Pods-LuckyXTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LuckyXTests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		156FA867669D4B93F30CDD60D832E303 /* EmbeddedObject.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EmbeddedObject.swift; path = RealmSwift/EmbeddedObject.swift; sourceTree = "<group>"; };
 		15F867157E93A94BDBACC87A2B111147 /* LOTRoundedRectAnimator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LOTRoundedRectAnimator.h; path = "lottie-ios/Classes/RenderSystem/AnimatorNodes/LOTRoundedRectAnimator.h"; sourceTree = "<group>"; };
 		17B69B1F8C889889E3E1B8288D06B0E7 /* RLMMigration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RLMMigration.h; path = include/RLMMigration.h; sourceTree = "<group>"; };
 		180F31C5BCD36E30C7E000FC45FBE21B /* LOTKeyframe.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LOTKeyframe.h; path = "lottie-ios/Classes/AnimatableProperties/LOTKeyframe.h"; sourceTree = "<group>"; };
 		18311DB749EC3436888EDCB38A352FC3 /* Projection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Projection.swift; path = RealmSwift/Projection.swift; sourceTree = "<group>"; };
+		1AC3EBA466D270A4AF71CA23E4494380 /* Pods-LuckyX.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LuckyX.release.xcconfig"; sourceTree = "<group>"; };
 		1AFC594BA8F7A6BF67C9A715020849EE /* Realm-realm_objc_privacy */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = "Realm-realm_objc_privacy"; path = realm_objc_privacy.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C5CA411C854841E0904E0FFF66CF5C3 /* LOTShapeFill.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LOTShapeFill.m; path = "lottie-ios/Classes/Models/LOTShapeFill.m"; sourceTree = "<group>"; };
 		1CBC49A54436C77A6C80CB668D3D3D78 /* AnyRealmValue.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AnyRealmValue.swift; path = RealmSwift/AnyRealmValue.swift; sourceTree = "<group>"; };
@@ -514,6 +527,7 @@
 		2C4B2CB086BA36F4CB06D94235E40897 /* Realm-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Realm-dummy.m"; sourceTree = "<group>"; };
 		2CBABD0C8A33B3EE24F263F65ED7A54F /* Popover-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Popover-dummy.m"; sourceTree = "<group>"; };
 		2DF093105404FEB8EDC73017C671016D /* LOTPathInterpolator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LOTPathInterpolator.h; path = "lottie-ios/Classes/RenderSystem/InterpolatorNodes/LOTPathInterpolator.h"; sourceTree = "<group>"; };
+		2ED84385C9F06EDD20EEA4772F2604D2 /* Pods-LuckyXTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LuckyXTests.debug.xcconfig"; sourceTree = "<group>"; };
 		2FE43FA58C4189319029C6B21D3C4CF9 /* ObjcBridgeable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ObjcBridgeable.swift; path = RealmSwift/Impl/ObjcBridgeable.swift; sourceTree = "<group>"; };
 		304980FDFA8F5B738543B949F09DC0A8 /* RealmSwift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "RealmSwift-dummy.m"; sourceTree = "<group>"; };
 		311411842191FB2763825CD61CA2D2F8 /* RLMSwiftObject.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RLMSwiftObject.h; path = include/RLMSwiftObject.h; sourceTree = "<group>"; };
@@ -530,13 +544,14 @@
 		37290E9B39068BAE777CC2CA1132D616 /* LOTShapeStar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LOTShapeStar.h; path = "lottie-ios/Classes/Models/LOTShapeStar.h"; sourceTree = "<group>"; };
 		38200280F8BF693BF79FCDC86F276CC7 /* RLMSchema.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RLMSchema.h; path = include/RLMSchema.h; sourceTree = "<group>"; };
 		38CE0CF022CFCBDA7749298C679A673A /* RLMAccessor.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = RLMAccessor.mm; path = Realm/RLMAccessor.mm; sourceTree = "<group>"; };
+		38D9DA9437D3B963DBA81609A298F164 /* Pods-LuckyXTests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-LuckyXTests"; path = Pods_LuckyXTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		395CF182D88C0FA8F89492A7F9A77989 /* LOTShapeGradientFill.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LOTShapeGradientFill.m; path = "lottie-ios/Classes/Models/LOTShapeGradientFill.m"; sourceTree = "<group>"; };
 		3AAD24CE849A9F0068A508DF3D80565A /* lottie-ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "lottie-ios.debug.xcconfig"; sourceTree = "<group>"; };
 		3AD9A50A90B004CC09B318BB901662FB /* RLMConstants.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RLMConstants.h; path = include/RLMConstants.h; sourceTree = "<group>"; };
 		3B0F59406C62A1AB751E83F4838F7455 /* LOTLayerGroup.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LOTLayerGroup.h; path = "lottie-ios/Classes/Models/LOTLayerGroup.h"; sourceTree = "<group>"; };
 		3CE65B30A76466B493B3A49B1D228B90 /* LOTShapeTrimPath.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LOTShapeTrimPath.h; path = "lottie-ios/Classes/Models/LOTShapeTrimPath.h"; sourceTree = "<group>"; };
-		3D444AC6C0AB1D6342742E0847F08155 /* Pods-LuckyX-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LuckyX-frameworks.sh"; sourceTree = "<group>"; };
 		3E4E2AD268758C75A27433457A70F23F /* Migration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Migration.swift; path = RealmSwift/Migration.swift; sourceTree = "<group>"; };
+		3E5A81FD94FB0BE165734F4470209DC3 /* Pods-LuckyX.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-LuckyX.modulemap"; sourceTree = "<group>"; };
 		3FDEC7E1D78C28AE8EE8CF5FA3ECE63F /* UIColor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UIColor.h; path = "lottie-ios/Classes/MacCompatibility/UIColor.h"; sourceTree = "<group>"; };
 		40851BF274AE4B77CAB190EB818B2B08 /* PropertyAccessors.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PropertyAccessors.swift; path = RealmSwift/Impl/PropertyAccessors.swift; sourceTree = "<group>"; };
 		425BC70E667EE21BE1E056B3D4578A0B /* LOTShapePath.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LOTShapePath.h; path = "lottie-ios/Classes/Models/LOTShapePath.h"; sourceTree = "<group>"; };
@@ -565,9 +580,9 @@
 		5731C0A542AB681191D26C7259E2C4A8 /* LOTTrimPathNode.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LOTTrimPathNode.m; path = "lottie-ios/Classes/RenderSystem/ManipulatorNodes/LOTTrimPathNode.m"; sourceTree = "<group>"; };
 		57F5F0DE58E74EA6C8A7A9792A9320AF /* LOTRenderGroup.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LOTRenderGroup.h; path = "lottie-ios/Classes/RenderSystem/RenderNodes/LOTRenderGroup.h"; sourceTree = "<group>"; };
 		58D3A548F5E7FEC87EC0790734906E42 /* SectionedResults.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SectionedResults.swift; path = RealmSwift/SectionedResults.swift; sourceTree = "<group>"; };
-		5A1BC765E16F2C5D65BB4233B2D54CB1 /* Pods-LuckyX-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LuckyX-dummy.m"; sourceTree = "<group>"; };
 		5B2D0ED4B4730C0E0DEE2A60B06037CE /* Realm.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Realm.swift; path = RealmSwift/Realm.swift; sourceTree = "<group>"; };
 		5C6256A0D4C30320CFACB3BB3ACDFDF2 /* LOTAsset.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LOTAsset.h; path = "lottie-ios/Classes/Models/LOTAsset.h"; sourceTree = "<group>"; };
+		5D33007DA781F51B1788361662EDAEFB /* Pods-LuckyX-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LuckyX-Info.plist"; sourceTree = "<group>"; };
 		5D45D967B534C28CD28B28C268B99F6E /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; name = PrivacyInfo.xcprivacy; path = Realm/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 		5E74B4EDC8C156ADC3160E293BB55721 /* ObjectId.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ObjectId.swift; path = RealmSwift/ObjectId.swift; sourceTree = "<group>"; };
 		5EA3EB6FBBD5BE949C8EB9FA0133E8C2 /* Popover-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Popover-prefix.pch"; sourceTree = "<group>"; };
@@ -577,10 +592,12 @@
 		62EE6753DC58E866589C126017F011B4 /* Realm.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Realm.debug.xcconfig; sourceTree = "<group>"; };
 		6301E9DD09EF06822E2499FD3A20376E /* Query.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Query.swift; path = RealmSwift/Query.swift; sourceTree = "<group>"; };
 		6302C5A30E3E05A603005499080E7353 /* Realm.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Realm.h; path = include/Realm.h; sourceTree = "<group>"; };
+		644485C601530DC92CCC8121EED72AEE /* Pods-LuckyXTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-LuckyXTests.modulemap"; sourceTree = "<group>"; };
 		651DAD12925684BB825AB0182EB569E7 /* LOTPolygonAnimator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LOTPolygonAnimator.h; path = "lottie-ios/Classes/RenderSystem/AnimatorNodes/LOTPolygonAnimator.h"; sourceTree = "<group>"; };
 		652499585DBD78363A5DCCF48C5D2922 /* RLMConstants.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RLMConstants.m; path = Realm/RLMConstants.m; sourceTree = "<group>"; };
 		657E003D8AC1DCA5FCB3276CC05250DE /* Realm-xcframeworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Realm-xcframeworks.sh"; sourceTree = "<group>"; };
 		65E7A8DBDA7D67BAE1575662E37E07EA /* Popover.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Popover.modulemap; sourceTree = "<group>"; };
+		666CA84337906733B1E21F3B3543D918 /* Pods-LuckyX-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LuckyX-acknowledgements.plist"; sourceTree = "<group>"; };
 		6685E0538EDF3A85648735042DE69679 /* SchemaDiscovery.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SchemaDiscovery.swift; path = RealmSwift/Impl/SchemaDiscovery.swift; sourceTree = "<group>"; };
 		6903CF30FC5457DEF52A86C5CE48A9CA /* LOTPlatformCompat.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LOTPlatformCompat.h; path = "lottie-ios/Classes/MacCompatibility/LOTPlatformCompat.h"; sourceTree = "<group>"; };
 		699875B68417D5A3526AD52A0A6D57F1 /* Realm.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Realm.release.xcconfig; sourceTree = "<group>"; };
@@ -613,7 +630,6 @@
 		7CB1F204F72B32E3FE48B0D459D51883 /* LOTShapeStroke.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LOTShapeStroke.h; path = "lottie-ios/Classes/Models/LOTShapeStroke.h"; sourceTree = "<group>"; };
 		7CDF762DFC3851E75CA4D3E15DD1D426 /* RealmKeyedCollection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RealmKeyedCollection.swift; path = RealmSwift/RealmKeyedCollection.swift; sourceTree = "<group>"; };
 		7D7237C6D6F9D38FA2D4B4841797A91A /* RLMProperty.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = RLMProperty.mm; path = Realm/RLMProperty.mm; sourceTree = "<group>"; };
-		7DA5170ACB8F739CA08467DDFF1723C0 /* Pods-LuckyX-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LuckyX-Info.plist"; sourceTree = "<group>"; };
 		7DB96C748BC5A7D616679678A6CE5030 /* LOTShapeStroke.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LOTShapeStroke.m; path = "lottie-ios/Classes/Models/LOTShapeStroke.m"; sourceTree = "<group>"; };
 		7E1C2C7D91AF8742A33DB6B1AB6CBF9E /* LOTBlockCallback.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LOTBlockCallback.h; path = "lottie-ios/Classes/PublicHeaders/LOTBlockCallback.h"; sourceTree = "<group>"; };
 		7EAF9CE1405CAFF252AC7894A6C83BA9 /* RLMRealmConfiguration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RLMRealmConfiguration.h; path = include/RLMRealmConfiguration.h; sourceTree = "<group>"; };
@@ -622,8 +638,9 @@
 		7F4EA4F79E35BE0BD84AA2809AFEF5B7 /* LOTRadialGradientLayer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LOTRadialGradientLayer.h; path = "lottie-ios/Classes/Extensions/LOTRadialGradientLayer.h"; sourceTree = "<group>"; };
 		7F551BA06DAF9CE84CB2400F263D8B38 /* LOTInterpolatorCallback.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LOTInterpolatorCallback.m; path = "lottie-ios/Classes/Private/LOTInterpolatorCallback.m"; sourceTree = "<group>"; };
 		7FEFD28476855288461A4476C568F693 /* List.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = List.swift; path = RealmSwift/List.swift; sourceTree = "<group>"; };
-		80EA8CF062F37B97EBA30A949A46E4E3 /* Pods-LuckyX-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LuckyX-acknowledgements.plist"; sourceTree = "<group>"; };
 		8178035826BD352DBF8A44809D602BF0 /* RLMSwiftValueStorage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RLMSwiftValueStorage.h; path = include/RLMSwiftValueStorage.h; sourceTree = "<group>"; };
+		81BDAA0A49AE5314F9A9CFB8B6540726 /* Pods-LuckyXTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LuckyXTests-Info.plist"; sourceTree = "<group>"; };
+		8382C53A811B339EBAD544343B3CCCF7 /* Pods-LuckyX-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LuckyX-acknowledgements.markdown"; sourceTree = "<group>"; };
 		849EA48D051A9E561472BCBCAB986E6E /* PersistedProperty.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PersistedProperty.swift; path = RealmSwift/PersistedProperty.swift; sourceTree = "<group>"; };
 		8574CE6F32F58C6677B0D324CD5FF748 /* lottie-ios.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "lottie-ios.modulemap"; sourceTree = "<group>"; };
 		8613E772E7FCD899641E1CAD1B247159 /* lottie-ios-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "lottie-ios-umbrella.h"; sourceTree = "<group>"; };
@@ -634,11 +651,11 @@
 		898D5CEB09A16ACB94026C7E7073786B /* RealmCollection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RealmCollection.swift; path = RealmSwift/RealmCollection.swift; sourceTree = "<group>"; };
 		89B2D8DD14F13B29677A5AFC5BA58DA5 /* RealmCollectionImpl.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RealmCollectionImpl.swift; path = RealmSwift/Impl/RealmCollectionImpl.swift; sourceTree = "<group>"; };
 		8A973A7E6A1C99E7F2EF92E235C42D1A /* LOTKeypath.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LOTKeypath.h; path = "lottie-ios/Classes/PublicHeaders/LOTKeypath.h"; sourceTree = "<group>"; };
+		8B075D55896B4D079DFFADA034F49149 /* Pods-LuckyX-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LuckyX-dummy.m"; sourceTree = "<group>"; };
 		8B3D9C8A1E910E8F2B5F43DEA2B1D7CC /* LOTBlockCallback.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LOTBlockCallback.m; path = "lottie-ios/Classes/Private/LOTBlockCallback.m"; sourceTree = "<group>"; };
 		8BD1FCC2192EAC28C1926C3F716983AF /* RLMUtil.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = RLMUtil.mm; path = Realm/RLMUtil.mm; sourceTree = "<group>"; };
 		8C5A242EABA7EB9DBF96899477C0EA13 /* Map.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Map.swift; path = RealmSwift/Map.swift; sourceTree = "<group>"; };
 		8C907999DE90E4EE84512DD110E96DF4 /* LOTAnimatorNode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LOTAnimatorNode.h; path = "lottie-ios/Classes/RenderSystem/LOTAnimatorNode.h"; sourceTree = "<group>"; };
-		8E4CA27B721C3E4372AB420F03993E6F /* Pods-LuckyX.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-LuckyX.modulemap"; sourceTree = "<group>"; };
 		8E563FF1DBAC4EF5C2085F0E9824CC6F /* LOTLayerContainer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LOTLayerContainer.h; path = "lottie-ios/Classes/AnimatableLayers/LOTLayerContainer.h"; sourceTree = "<group>"; };
 		8F9619C53E5DE383C7AC6C33E1040A0D /* RLMSupport.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RLMSupport.swift; path = Realm/Swift/RLMSupport.swift; sourceTree = "<group>"; };
 		8FB3F7C0C813FA4BC05FE7F9B5769340 /* LOTBezierPath.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LOTBezierPath.h; path = "lottie-ios/Classes/Extensions/LOTBezierPath.h"; sourceTree = "<group>"; };
@@ -672,6 +689,7 @@
 		A4340C8FCC26552F3FB5C77B216879F1 /* RLMGeospatial.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RLMGeospatial.h; path = include/RLMGeospatial.h; sourceTree = "<group>"; };
 		A48DA97FF2DC2E4AFF3B40FB861EF5A2 /* RealmSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = RealmSwift.release.xcconfig; sourceTree = "<group>"; };
 		A4EDB584D7FC1F9F8CCC0BA13D734F98 /* RLMThreadSafeReference.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = RLMThreadSafeReference.mm; path = Realm/RLMThreadSafeReference.mm; sourceTree = "<group>"; };
+		A5DA7E623B647A8E571F0342881513AF /* Pods-LuckyXTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LuckyXTests-dummy.m"; sourceTree = "<group>"; };
 		A5F4C80CC0B36C46295DA6C54C798BB9 /* NSValue+Compat.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSValue+Compat.m"; path = "lottie-ios/Classes/MacCompatibility/NSValue+Compat.m"; sourceTree = "<group>"; };
 		A62EA1B8782205FC67BC0EA9E2ACBB57 /* RLMRealm_Dynamic.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RLMRealm_Dynamic.h; path = include/RLMRealm_Dynamic.h; sourceTree = "<group>"; };
 		A6AE0C5F75C1F86392C262C845B16835 /* LOTFillRenderer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LOTFillRenderer.m; path = "lottie-ios/Classes/RenderSystem/RenderNodes/LOTFillRenderer.m"; sourceTree = "<group>"; };
@@ -682,19 +700,16 @@
 		AB6811A0ACBF52C3DAF906EC2866BB22 /* RealmProperty.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RealmProperty.swift; path = RealmSwift/RealmProperty.swift; sourceTree = "<group>"; };
 		AC70800BBC39EB966B610857C5D5404A /* RealmSwift-realm_swift_privacy */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = "RealmSwift-realm_swift_privacy"; path = realm_swift_privacy.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC91CF14987E08F45C4EE4533F7EA500 /* RLMObject.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = RLMObject.mm; path = Realm/RLMObject.mm; sourceTree = "<group>"; };
-		AD5D95E8756FBD31067623D4D293FC93 /* Pods-LuckyX.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LuckyX.debug.xcconfig"; sourceTree = "<group>"; };
 		AD7A792F1E211FDABB53EB7F9AB33075 /* LOTPolygonAnimator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LOTPolygonAnimator.m; path = "lottie-ios/Classes/RenderSystem/AnimatorNodes/LOTPolygonAnimator.m"; sourceTree = "<group>"; };
 		B1050EA5BAEC780582CB71D060630FA4 /* RLMDecimal128.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RLMDecimal128.h; path = include/RLMDecimal128.h; sourceTree = "<group>"; };
 		B10A5C1EDF089C78E9716AC9CB8E0358 /* lottie-ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "lottie-ios.release.xcconfig"; sourceTree = "<group>"; };
 		B132F4550C2DC4AB85E8F04778D7669E /* LOTShapeTransform.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LOTShapeTransform.h; path = "lottie-ios/Classes/Models/LOTShapeTransform.h"; sourceTree = "<group>"; };
 		B141311D23CA2746F0618A7CA1620E10 /* RLMScheduler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RLMScheduler.h; path = include/RLMScheduler.h; sourceTree = "<group>"; };
 		B1C574D63C64691D59869D0A443A857C /* LOTPolystarAnimator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LOTPolystarAnimator.h; path = "lottie-ios/Classes/RenderSystem/AnimatorNodes/LOTPolystarAnimator.h"; sourceTree = "<group>"; };
-		B21424EF5DEF8981A27AFAC888890DA9 /* Pods-LuckyX.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LuckyX.release.xcconfig"; sourceTree = "<group>"; };
 		B21C842C446FB7E1C85702279450A0FE /* LOTAnimationCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LOTAnimationCache.m; path = "lottie-ios/Classes/Private/LOTAnimationCache.m"; sourceTree = "<group>"; };
 		B35A8339D36AD0B7C76E9610855B5391 /* LOTRoundedRectAnimator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LOTRoundedRectAnimator.m; path = "lottie-ios/Classes/RenderSystem/AnimatorNodes/LOTRoundedRectAnimator.m"; sourceTree = "<group>"; };
 		B366915FFFB3B57414508E9BC3109630 /* RLMRealmUtil.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = RLMRealmUtil.mm; path = Realm/RLMRealmUtil.mm; sourceTree = "<group>"; };
 		B4DDE89B6153B5C439F447432B2665EB /* RLMLogger.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RLMLogger.h; path = include/RLMLogger.h; sourceTree = "<group>"; };
-		B4ECD14C2B26A3033DAD4D79DBB3175A /* Pods-LuckyX-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LuckyX-umbrella.h"; sourceTree = "<group>"; };
 		B5BFFDADCD6EABF7DCF4EAA4178D6BB5 /* RealmSwift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = RealmSwift.modulemap; sourceTree = "<group>"; };
 		B67C6FD4D8A94CE37FE87C80C64CC984 /* ObjectSchema.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ObjectSchema.swift; path = RealmSwift/ObjectSchema.swift; sourceTree = "<group>"; };
 		B72A389B0E6A6DD2F3D61F4DC7F84D83 /* Popover */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Popover; path = Popover.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -703,6 +718,7 @@
 		B802444D9D7F774F0AE68F0DFB6BC396 /* RLMError.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = RLMError.mm; path = Realm/RLMError.mm; sourceTree = "<group>"; };
 		B806C6B8A97D984568BDFA95F7510B51 /* SwiftUI.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftUI.swift; path = RealmSwift/SwiftUI.swift; sourceTree = "<group>"; };
 		B886464730A3D2D1C71AF9AB83FB9CB2 /* LOTPointInterpolator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LOTPointInterpolator.h; path = "lottie-ios/Classes/RenderSystem/InterpolatorNodes/LOTPointInterpolator.h"; sourceTree = "<group>"; };
+		B8B188882A01DECB434653F79325DE17 /* Pods-LuckyXTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LuckyXTests-umbrella.h"; sourceTree = "<group>"; };
 		B8E4DC58848B205AEAC4829992E3C155 /* LOTValueCallback.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LOTValueCallback.h; path = "lottie-ios/Classes/PublicHeaders/LOTValueCallback.h"; sourceTree = "<group>"; };
 		B8F8EC880E05AC9A467B33BE0C085319 /* RLMObjectBase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RLMObjectBase.h; path = include/RLMObjectBase.h; sourceTree = "<group>"; };
 		BA8E1A91BB9F2AF892812997137FD648 /* RLMGeospatial.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = RLMGeospatial.mm; path = Realm/RLMGeospatial.mm; sourceTree = "<group>"; };
@@ -718,23 +734,25 @@
 		C0E8355427F85DADE9C78CD6C15EDD46 /* Popover.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Popover.swift; path = Classes/Popover.swift; sourceTree = "<group>"; };
 		C111F61C6A401F4615A96FAE4DECEFD0 /* LOTAssetGroup.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LOTAssetGroup.h; path = "lottie-ios/Classes/Models/LOTAssetGroup.h"; sourceTree = "<group>"; };
 		C1C23238DD0C5929C9F734ED0D260159 /* LOTSizeInterpolator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LOTSizeInterpolator.m; path = "lottie-ios/Classes/RenderSystem/InterpolatorNodes/LOTSizeInterpolator.m"; sourceTree = "<group>"; };
+		C1E91E85DCAC844289768FF1027A1306 /* Pods-LuckyX-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LuckyX-frameworks.sh"; sourceTree = "<group>"; };
 		C2220E0A4600D8AA60308733B246C062 /* LOTArrayInterpolator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LOTArrayInterpolator.m; path = "lottie-ios/Classes/RenderSystem/InterpolatorNodes/LOTArrayInterpolator.m"; sourceTree = "<group>"; };
 		C2945FC99741E2E61EA3EE273F8A7B1F /* RLMLogger_Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RLMLogger_Private.h; path = include/RLMLogger_Private.h; sourceTree = "<group>"; };
 		C2A631CE7C3AEAE1ED080521B9F2AD47 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		C2CC5F6A4351FBFF175B2FBCD3A56478 /* RLMSectionedResults.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = RLMSectionedResults.mm; path = Realm/RLMSectionedResults.mm; sourceTree = "<group>"; };
 		C2F7A1952962287A0617666EF42FE76D /* RLMArray_Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RLMArray_Private.h; path = include/RLMArray_Private.h; sourceTree = "<group>"; };
 		C463B74511D9BD512E71618CC1930CB7 /* LOTCircleAnimator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LOTCircleAnimator.h; path = "lottie-ios/Classes/RenderSystem/AnimatorNodes/LOTCircleAnimator.h"; sourceTree = "<group>"; };
-		C4869D64E73B9FDB3C2DBE6D9C48613F /* Pods-LuckyX-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LuckyX-acknowledgements.markdown"; sourceTree = "<group>"; };
 		C577E567E319375048F700155DA6F02C /* ResourceBundle-realm_objc_privacy-Realm-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-realm_objc_privacy-Realm-Info.plist"; sourceTree = "<group>"; };
 		C6DD5E7D146357A0B0653E04B34706DD /* CGGeometry+LOTAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "CGGeometry+LOTAdditions.m"; path = "lottie-ios/Classes/Extensions/CGGeometry+LOTAdditions.m"; sourceTree = "<group>"; };
 		C71CDD83F35D1EC8587EFFE9B56C28EA /* RLMManagedSet.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = RLMManagedSet.mm; path = Realm/RLMManagedSet.mm; sourceTree = "<group>"; };
 		C966AB2F22011D22C57DA0411AA2AE8C /* RLMAccessor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RLMAccessor.h; path = include/RLMAccessor.h; sourceTree = "<group>"; };
+		CA4083401378D2D6A482B3601187E20C /* Pods-LuckyXTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LuckyXTests.release.xcconfig"; sourceTree = "<group>"; };
 		CBB15207BBD035B40BEF42C2D9B452BA /* UIColor+Expanded.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIColor+Expanded.h"; path = "lottie-ios/Classes/Extensions/UIColor+Expanded.h"; sourceTree = "<group>"; };
 		CD2560466BBC59A9D41FFE791A2AB277 /* LOTCompositionContainer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LOTCompositionContainer.h; path = "lottie-ios/Classes/AnimatableLayers/LOTCompositionContainer.h"; sourceTree = "<group>"; };
 		CE4FD4BE4F20E2B73CBF1B30E139B635 /* LOTAnimatorNode.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LOTAnimatorNode.m; path = "lottie-ios/Classes/RenderSystem/LOTAnimatorNode.m"; sourceTree = "<group>"; };
 		CE6A4EE7612C209731464E642B8342DD /* Geospatial.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Geospatial.swift; path = RealmSwift/Geospatial.swift; sourceTree = "<group>"; };
 		CED9DDC2E1EF7B1AF0CF3501A69A5A8A /* RLMObjectSchema.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RLMObjectSchema.h; path = include/RLMObjectSchema.h; sourceTree = "<group>"; };
 		CF5165ABD9A72B4D5318134FB0DB3F61 /* RLMError.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RLMError.h; path = include/RLMError.h; sourceTree = "<group>"; };
+		CF86A18E595CBC75AE3C10A9322C5ADC /* Pods-LuckyX-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LuckyX-umbrella.h"; sourceTree = "<group>"; };
 		CFECBE6224A69D717BA2F5ECDED6F833 /* LOTTransformInterpolator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LOTTransformInterpolator.h; path = "lottie-ios/Classes/RenderSystem/InterpolatorNodes/LOTTransformInterpolator.h"; sourceTree = "<group>"; };
 		D0AD9FAD15619DAA32C4A1FF676251E6 /* lottie-ios-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "lottie-ios-prefix.pch"; sourceTree = "<group>"; };
 		D1D493EB24F8F7D6CAB41B3C6093FE6D /* RealmSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = RealmSwift.debug.xcconfig; sourceTree = "<group>"; };
@@ -754,6 +772,7 @@
 		E076D822D544EA1ECC71034F8DAE8AC9 /* Decimal128.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Decimal128.swift; path = RealmSwift/Decimal128.swift; sourceTree = "<group>"; };
 		E419F8DB6BDFC14BE5AAABE791084A08 /* Aliases.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Aliases.swift; path = RealmSwift/Aliases.swift; sourceTree = "<group>"; };
 		E48ABF3DBE094BBD686B167C1DA31E80 /* LOTAnimationView_Compat.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LOTAnimationView_Compat.h; path = "lottie-ios/Classes/PublicHeaders/LOTAnimationView_Compat.h"; sourceTree = "<group>"; };
+		E4A8E8BFECA592E89264D0192CF72A6E /* Pods-LuckyX.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LuckyX.debug.xcconfig"; sourceTree = "<group>"; };
 		E7014146F7A1EDCEEA56EC3CFB6D4EEF /* Property.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Property.swift; path = RealmSwift/Property.swift; sourceTree = "<group>"; };
 		E707DEE67A39538240CB25634CD96E76 /* RLMObjectId.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = RLMObjectId.mm; path = Realm/RLMObjectId.mm; sourceTree = "<group>"; };
 		E893355060655407F027BD4F895EB129 /* LOTAsset.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LOTAsset.m; path = "lottie-ios/Classes/Models/LOTAsset.m"; sourceTree = "<group>"; };
@@ -815,6 +834,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C58B8DB6AFAA1A4AD3B2FFBB55BB3059 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				745CC301A00EE010C859F6493ED483D6 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D26DE9BC71A6C385A8B7757C141C189B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -863,6 +890,22 @@
 				8C09A9D8294638A55CEA684545ACE65E /* iOS */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		09600E9DEA6F6027971F7485BC9DF796 /* Pods-LuckyXTests */ = {
+			isa = PBXGroup;
+			children = (
+				644485C601530DC92CCC8121EED72AEE /* Pods-LuckyXTests.modulemap */,
+				156543322A8DF18E9E78F57B20EA12A2 /* Pods-LuckyXTests-acknowledgements.markdown */,
+				148266F231DC81C732C8F37A34586149 /* Pods-LuckyXTests-acknowledgements.plist */,
+				A5DA7E623B647A8E571F0342881513AF /* Pods-LuckyXTests-dummy.m */,
+				81BDAA0A49AE5314F9A9CFB8B6540726 /* Pods-LuckyXTests-Info.plist */,
+				B8B188882A01DECB434653F79325DE17 /* Pods-LuckyXTests-umbrella.h */,
+				2ED84385C9F06EDD20EEA4772F2604D2 /* Pods-LuckyXTests.debug.xcconfig */,
+				CA4083401378D2D6A482B3601187E20C /* Pods-LuckyXTests.release.xcconfig */,
+			);
+			name = "Pods-LuckyXTests";
+			path = "Target Support Files/Pods-LuckyXTests";
 			sourceTree = "<group>";
 		};
 		099B871B1D85B37A9C8BB07C2EED66E9 /* Resources */ = {
@@ -977,45 +1020,6 @@
 			path = Popover;
 			sourceTree = "<group>";
 		};
-		497EC084139913A84505A8F8CE863A44 /* Pods-LuckyX */ = {
-			isa = PBXGroup;
-			children = (
-				8E4CA27B721C3E4372AB420F03993E6F /* Pods-LuckyX.modulemap */,
-				C4869D64E73B9FDB3C2DBE6D9C48613F /* Pods-LuckyX-acknowledgements.markdown */,
-				80EA8CF062F37B97EBA30A949A46E4E3 /* Pods-LuckyX-acknowledgements.plist */,
-				5A1BC765E16F2C5D65BB4233B2D54CB1 /* Pods-LuckyX-dummy.m */,
-				3D444AC6C0AB1D6342742E0847F08155 /* Pods-LuckyX-frameworks.sh */,
-				7DA5170ACB8F739CA08467DDFF1723C0 /* Pods-LuckyX-Info.plist */,
-				B4ECD14C2B26A3033DAD4D79DBB3175A /* Pods-LuckyX-umbrella.h */,
-				AD5D95E8756FBD31067623D4D293FC93 /* Pods-LuckyX.debug.xcconfig */,
-				B21424EF5DEF8981A27AFAC888890DA9 /* Pods-LuckyX.release.xcconfig */,
-			);
-			name = "Pods-LuckyX";
-			path = "Target Support Files/Pods-LuckyX";
-			sourceTree = "<group>";
-		};
-		509BEBFDE2B82C4E75954473F3DE1F9A /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				51BA97E8B5085EFFB47BC9C0B785CEA7 /* lottie-ios */,
-				344B3E7A2882483E76A7BA07B63AC678 /* Pods-LuckyX */,
-				B72A389B0E6A6DD2F3D61F4DC7F84D83 /* Popover */,
-				921BE4A82C4A7A5C72A0C6F8B8FEF200 /* Realm */,
-				1AFC594BA8F7A6BF67C9A715020849EE /* Realm-realm_objc_privacy */,
-				437919EE08EC6BFCCBAC3BD346309742 /* RealmSwift */,
-				AC70800BBC39EB966B610857C5D5404A /* RealmSwift-realm_swift_privacy */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		587AF44CA7DD735049F6084ED7B5C503 /* Targets Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				497EC084139913A84505A8F8CE863A44 /* Pods-LuckyX */,
-			);
-			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
 		5EBD50C1A90E677F603727FF5C2223AF /* Headers */ = {
 			isa = PBXGroup;
 			children = (
@@ -1064,6 +1068,23 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		895EAEAABBC7FAE08746B7542D377F9A /* Pods-LuckyX */ = {
+			isa = PBXGroup;
+			children = (
+				3E5A81FD94FB0BE165734F4470209DC3 /* Pods-LuckyX.modulemap */,
+				8382C53A811B339EBAD544343B3CCCF7 /* Pods-LuckyX-acknowledgements.markdown */,
+				666CA84337906733B1E21F3B3543D918 /* Pods-LuckyX-acknowledgements.plist */,
+				8B075D55896B4D079DFFADA034F49149 /* Pods-LuckyX-dummy.m */,
+				C1E91E85DCAC844289768FF1027A1306 /* Pods-LuckyX-frameworks.sh */,
+				5D33007DA781F51B1788361662EDAEFB /* Pods-LuckyX-Info.plist */,
+				CF86A18E595CBC75AE3C10A9322C5ADC /* Pods-LuckyX-umbrella.h */,
+				E4A8E8BFECA592E89264D0192CF72A6E /* Pods-LuckyX.debug.xcconfig */,
+				1AC3EBA466D270A4AF71CA23E4494380 /* Pods-LuckyX.release.xcconfig */,
+			);
+			name = "Pods-LuckyX";
+			path = "Target Support Files/Pods-LuckyX";
+			sourceTree = "<group>";
+		};
 		8C09A9D8294638A55CEA684545ACE65E /* iOS */ = {
 			isa = PBXGroup;
 			children = (
@@ -1072,6 +1093,15 @@
 				A7530F5DB18530F231EF0DEB53DEA31D /* UIKit.framework */,
 			);
 			name = iOS;
+			sourceTree = "<group>";
+		};
+		95455297C3FC680C21B4200DD5176977 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				895EAEAABBC7FAE08746B7542D377F9A /* Pods-LuckyX */,
+				09600E9DEA6F6027971F7485BC9DF796 /* Pods-LuckyXTests */,
+			);
+			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
 		A735467A67348F74C4D847096E0B37FF /* lottie-ios */ = {
@@ -1296,9 +1326,24 @@
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				03C5C200A0787E300053CFA8F53CA094 /* Frameworks */,
 				70D32C255A9BBF3572DFAC3807C16F5F /* Pods */,
-				509BEBFDE2B82C4E75954473F3DE1F9A /* Products */,
-				587AF44CA7DD735049F6084ED7B5C503 /* Targets Support Files */,
+				E13C31218C346278D63B5CE4281D7F1B /* Products */,
+				95455297C3FC680C21B4200DD5176977 /* Targets Support Files */,
 			);
+			sourceTree = "<group>";
+		};
+		E13C31218C346278D63B5CE4281D7F1B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				51BA97E8B5085EFFB47BC9C0B785CEA7 /* lottie-ios */,
+				344B3E7A2882483E76A7BA07B63AC678 /* Pods-LuckyX */,
+				38D9DA9437D3B963DBA81609A298F164 /* Pods-LuckyXTests */,
+				B72A389B0E6A6DD2F3D61F4DC7F84D83 /* Popover */,
+				921BE4A82C4A7A5C72A0C6F8B8FEF200 /* Realm */,
+				1AFC594BA8F7A6BF67C9A715020849EE /* Realm-realm_objc_privacy */,
+				437919EE08EC6BFCCBAC3BD346309742 /* RealmSwift */,
+				AC70800BBC39EB966B610857C5D5404A /* RealmSwift-realm_swift_privacy */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		F96A8501BC830B6629063E58EACDC916 /* Support Files */ = {
@@ -1467,6 +1512,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E1BE2324C84761CD941972BF87C00136 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E8BE78B15288876C495206EF098BC28 /* Pods-LuckyXTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F3D71BA4034FB69176A5ED57A1D3392C /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -1596,6 +1649,25 @@
 			productReference = AC70800BBC39EB966B610857C5D5404A /* RealmSwift-realm_swift_privacy */;
 			productType = "com.apple.product-type.bundle";
 		};
+		B6052D3FE9054444AF2C68919AD033E3 /* Pods-LuckyXTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C619C021791951A6F6DB2E089F18F732 /* Build configuration list for PBXNativeTarget "Pods-LuckyXTests" */;
+			buildPhases = (
+				E1BE2324C84761CD941972BF87C00136 /* Headers */,
+				58E3AAED664715530EB05DD02B7CEC4E /* Sources */,
+				C58B8DB6AFAA1A4AD3B2FFBB55BB3059 /* Frameworks */,
+				8678D97172B49D0B13B740EFFD082DE7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				73E9AA64A3B8C38B9CF64BD1574F8F8E /* PBXTargetDependency */,
+			);
+			name = "Pods-LuckyXTests";
+			productName = Pods_LuckyXTests;
+			productReference = 38D9DA9437D3B963DBA81609A298F164 /* Pods-LuckyXTests */;
+			productType = "com.apple.product-type.framework";
+		};
 		D8F7D719B6671C5E3A6851AFBAF78574 /* Realm-realm_objc_privacy */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 63DA4E2B65289A62220F18A2879AF2C3 /* Build configuration list for PBXNativeTarget "Realm-realm_objc_privacy" */;
@@ -1633,12 +1705,13 @@
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
 			minimizedProjectReferenceProxies = 0;
 			preferredProjectObjectVersion = 100;
-			productRefGroup = 509BEBFDE2B82C4E75954473F3DE1F9A /* Products */;
+			productRefGroup = E13C31218C346278D63B5CE4281D7F1B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				0B967D7F8561D42493EE289EC8D450D1 /* lottie-ios */,
 				8716F8ED55732566F7C5C61EF2A2A6CD /* Pods-LuckyX */,
+				B6052D3FE9054444AF2C68919AD033E3 /* Pods-LuckyXTests */,
 				89ADB0D61D0BE9648E9853F5F8BDA717 /* Popover */,
 				68494F30B4A13F8E5E88BCCAEC25B0A4 /* Realm */,
 				D8F7D719B6671C5E3A6851AFBAF78574 /* Realm-realm_objc_privacy */,
@@ -1665,6 +1738,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		5FF6B325A1E459A9AF5AED5390A7F66F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8678D97172B49D0B13B740EFFD082DE7 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -1796,6 +1876,14 @@
 				04A7669C2839823262A76055B0EA7090 /* RLMUtil.mm in Sources */,
 				13326AE4DC0A499C3E8F8007E580FEF4 /* RLMUUID.mm in Sources */,
 				2DCE5E721E5A50D6BFF1441760B7C4D3 /* RLMValue.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		58E3AAED664715530EB05DD02B7CEC4E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D95744C9961B126FC9651DE693791A91 /* Pods-LuckyXTests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1964,6 +2052,12 @@
 			name = Popover;
 			target = 89ADB0D61D0BE9648E9853F5F8BDA717 /* Popover */;
 			targetProxy = 018069AD479A5754A5BAD0AB112F84DA /* PBXContainerItemProxy */;
+		};
+		73E9AA64A3B8C38B9CF64BD1574F8F8E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-LuckyX";
+			target = 8716F8ED55732566F7C5C61EF2A2A6CD /* Pods-LuckyX */;
+			targetProxy = ACED0A38429D723B8CAAD0E3544229A0 /* PBXContainerItemProxy */;
 		};
 		746410B21CB9ED3FD3595D767689E471 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -2165,7 +2259,7 @@
 		};
 		51DCF7305C1A699CF8B4788A551C0C63 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B21424EF5DEF8981A27AFAC888890DA9 /* Pods-LuckyX.release.xcconfig */;
+			baseConfigurationReference = 1AC3EBA466D270A4AF71CA23E4494380 /* Pods-LuckyX.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -2354,6 +2448,46 @@
 			};
 			name = Debug;
 		};
+		86FC8399FA60167A820CED213C426D0B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CA4083401378D2D6A482B3601187E20C /* Pods-LuckyXTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				INFOPLIST_FILE = "Target Support Files/Pods-LuckyXTests/Pods-LuckyXTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-LuckyXTests/Pods-LuckyXTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		9248FB869881F9B39BE18C435BA3B865 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -2416,6 +2550,45 @@
 			};
 			name = Release;
 		};
+		A3B044FC06C8C18C293A0426A265EBF0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2ED84385C9F06EDD20EEA4772F2604D2 /* Pods-LuckyXTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				INFOPLIST_FILE = "Target Support Files/Pods-LuckyXTests/Pods-LuckyXTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-LuckyXTests/Pods-LuckyXTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		ACCAC31969E1DFAEAEC2B629006CEF1E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 62EE6753DC58E866589C126017F011B4 /* Realm.debug.xcconfig */;
@@ -2457,7 +2630,7 @@
 		};
 		CBCE718AE89A8E504595A674F1208217 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AD5D95E8756FBD31067623D4D293FC93 /* Pods-LuckyX.debug.xcconfig */;
+			baseConfigurationReference = E4A8E8BFECA592E89264D0192CF72A6E /* Pods-LuckyX.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -2630,6 +2803,15 @@
 			buildConfigurations = (
 				CBCE718AE89A8E504595A674F1208217 /* Debug */,
 				51DCF7305C1A699CF8B4788A551C0C63 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C619C021791951A6F6DB2E089F18F732 /* Build configuration list for PBXNativeTarget "Pods-LuckyXTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A3B044FC06C8C18C293A0426A265EBF0 /* Debug */,
+				86FC8399FA60167A820CED213C426D0B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

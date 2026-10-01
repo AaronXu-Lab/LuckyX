@@ -96,15 +96,25 @@ class EditPersonVC: UIViewController,UITextViewDelegate,UITableViewDelegate,UITa
         editPersonTableView.reloadData()
     }
     @IBAction func finishEdited(_ sender: UIBarButtonItem) {
-        visitPersons()
-        //添加至列表
-        try! realm.write {
-            realm.deleteAll()
+        let numbers = editPersons.map { $0.number }
+        guard editPersons.allSatisfy({ $0.number > 0 && $0.name != "输入错误" && ["红", "绿", "黄", "蓝", "紫", "粉"].contains($0.color) }),
+              Set(numbers).count == numbers.count else {
+            let alert = UIAlertController(title: "名单格式有误", message: "每行填写：姓名 颜色 工号 心愿。颜色须为红、绿、黄、蓝、紫或粉，工号须有效且不能重复。", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "好的", style: .default))
+            present(alert, animated: true)
+            return
         }
-        for editPerson in editPersons{
-            try! realm.write {
-                realm.add(editPerson)
+        do {
+            try realm.write {
+                realm.delete(realm.objects(Prize.self))
+                realm.delete(realm.objects(Person.self))
+                realm.add(editPersons)
             }
+        } catch {
+            let alert = UIAlertController(title: "保存失败", message: error.localizedDescription, preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "好的", style: .default))
+            present(alert, animated: true)
+            return
         }
         //保存默认值
         UserDefaults.standard.set(textViewInput.text, forKey: "UserDefaultEditPerson")
