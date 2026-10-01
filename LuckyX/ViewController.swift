@@ -99,7 +99,7 @@ class ViewController: UIViewController,UICollectionViewDelegate,UICollectionView
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath) as! PrizeCell
             //如果奖品数为1，则不显示数量
             cell.textLabel.text = "\(bottomPrizes[indexPath.row].name)\(bottomPrizes[indexPath.row].number == 1 ? "" : " × \(bottomPrizes[indexPath.row].number)")"
-            cell.loadImage(url: bottomPrizes[indexPath.row].imageUrl, prizeName: bottomPrizes[indexPath.row].name)
+            cell.loadImage(url: bottomPrizes[indexPath.row].imageUrl)
             cell.selectMask.isHidden = !bottomPrizes[indexPath.row].isSelectd
             return cell
             

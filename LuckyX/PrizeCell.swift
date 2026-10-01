@@ -15,20 +15,11 @@ class PrizeCell: UICollectionViewCell {
     private var imageTask: URLSessionDataTask?
     private var representedURL: String?
 
-    func loadImage(url: String, prizeName: String) {
+    func loadImage(url: String) {
         imageTask?.cancel()
         representedURL = url
-        prizeImageView.contentMode = .scaleAspectFit
-        prizeImageView.backgroundColor = .white
-        prizeImageView.tintColor = .systemPink
-        let symbol: String
-        if prizeName.contains("红包") { symbol = "envelope.fill" }
-        else if prizeName.contains("购物卡") { symbol = "creditcard.fill" }
-        else if prizeName.contains("耳机") { symbol = "headphones" }
-        else if prizeName.contains("键盘") { symbol = "keyboard" }
-        else if prizeName.contains("行李箱") { symbol = "suitcase.rolling.fill" }
-        else { symbol = "gift.fill" }
-        prizeImageView.image = UIImage(systemName: symbol, withConfiguration: UIImage.SymbolConfiguration(pointSize: 36))?.withAlignmentRectInsets(UIEdgeInsets(top: -16, left: -16, bottom: -16, right: -16))
+        prizeImageView.contentMode = .scaleToFill
+        prizeImageView.image = UIImage(named: "OPPO")
         guard let imageURL = URL(string: url) else { return }
         var request = URLRequest(url: imageURL)
         request.timeoutInterval = 10
