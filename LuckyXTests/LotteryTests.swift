@@ -49,6 +49,34 @@ final class LotteryTests: XCTestCase {
         XCTAssertEqual(defaults.string(forKey: "UserDefaultEditPerson"), "已有名单")
     }
 
+    func testNativeWishPopoverUsesButtonAnchorAndMultilineText() async throws {
+        let scene = try XCTUnwrap(UIApplication.shared.connectedScenes.first as? UIWindowScene)
+        let previousKeyWindow = scene.windows.first { $0.isKeyWindow }
+        let window = UIWindow(windowScene: scene)
+        let navigation = try XCTUnwrap(UIStoryboard(name: "Main", bundle: .main).instantiateInitialViewController() as? UINavigationController)
+        window.rootViewController = navigation
+        window.makeKeyAndVisible()
+        defer {
+            window.isHidden = true
+            previousKeyWindow?.makeKeyAndVisible()
+        }
+        let controller = try XCTUnwrap(navigation.viewControllers.first as? ViewController)
+        controller.loadViewIfNeeded()
+        controller.current🎁Mode.text = "特等奖"
+        controller.currentWish = "测试心愿_支持多行显示"
+        let button = UIButton(frame: CGRect(x: 400, y: 400, width: 44, height: 44))
+        controller.view.addSubview(button)
+        controller.showWishAction(button)
+        try await Task.sleep(nanoseconds: 500_000_000)
+        let presented = try XCTUnwrap(controller.presentedViewController)
+        XCTAssertEqual(presented.modalPresentationStyle, .popover)
+        XCTAssertTrue(presented.popoverPresentationController?.sourceView === button)
+        let label = try XCTUnwrap(presented.view.subviews.compactMap { $0 as? UILabel }.first)
+        XCTAssertEqual(label.text, "测试心愿 支持多行显示")
+        XCTAssertEqual(label.numberOfLines, 0)
+        presented.dismiss(animated: false)
+    }
+
     private func addPeople() throws {
         try realm.write {
             for number in 1...3 {

@@ -8,9 +8,7 @@
 
 import UIKit
 import RealmSwift
-import Lottie
 import AVKit
-import Popover
 
 class Person: Object {
     @objc dynamic var name = ""
@@ -71,22 +69,29 @@ class ViewController: UIViewController,UICollectionViewDelegate,UICollectionView
     
     var currentWish = "当前心愿"
     @IBAction func showWishAction(_ sender: UIButton) {
-        //如果砸的是特等奖的蛋，打印出心愿
-        if current🎁Mode.text == "特等奖" && currentWish != "当前心愿"{
-            let startPoint = CGPoint(x: eggPersonCollectionView.frame.origin.x+eggPersonCollectionView.frame.width/2, y: eggPersonCollectionView.frame.origin.y+eggPersonCollectionView.frame.height)
-            let wishText = UILabel(frame: CGRect(x: 10, y: 0, width: 108/9*19.5-20, height: 108))
-            wishText.text = currentWish.replacingOccurrences(of: "_", with: " ")
-            wishText.textAlignment = NSTextAlignment.center
-            wishText.numberOfLines = 1
-            wishText.sizeToFit()
-            let aView = UIView(frame: CGRect(x: wishText.frame.origin.x-10, y: wishText.frame.origin.y-10, width: wishText.frame.width+20, height: wishText.frame.height+20))
-            wishText.frame.origin.y += 20
-            aView.addSubview(wishText)
-            let popover = Popover()
-            popover.show(aView, point: startPoint)
-            //就不验证了，小心点
-            //sender.isHidden = true
-        }
+        guard current🎁Mode.text == "特等奖", currentWish != "当前心愿" else { return }
+        let content = UIViewController()
+        let label = UILabel()
+        label.text = currentWish.replacingOccurrences(of: "_", with: " ")
+        label.numberOfLines = 0
+        label.font = .preferredFont(forTextStyle: .body)
+        label.adjustsFontForContentSizeCategory = true
+        label.translatesAutoresizingMaskIntoConstraints = false
+        content.view.backgroundColor = .systemBackground
+        content.view.addSubview(label)
+        NSLayoutConstraint.activate([
+            label.leadingAnchor.constraint(equalTo: content.view.leadingAnchor, constant: 20),
+            label.trailingAnchor.constraint(equalTo: content.view.trailingAnchor, constant: -20),
+            label.topAnchor.constraint(equalTo: content.view.topAnchor, constant: 20),
+            label.bottomAnchor.constraint(equalTo: content.view.bottomAnchor, constant: -20)
+        ])
+        let size = label.sizeThatFits(CGSize(width: 280, height: CGFloat.greatestFiniteMagnitude))
+        content.preferredContentSize = CGSize(width: 320, height: max(88, size.height + 40))
+        content.modalPresentationStyle = .popover
+        content.popoverPresentationController?.sourceView = sender
+        content.popoverPresentationController?.sourceRect = sender.bounds
+        content.popoverPresentationController?.permittedArrowDirections = [.up, .down]
+        present(content, animated: true)
     }
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         if collectionView.tag == 0 {

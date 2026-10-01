@@ -1,2 +1,7 @@
 # macOS Finder metadata
 .DS_Store
+
+# Local Xcode state and build output
+xcuserdata/
+DerivedData/
+.build/

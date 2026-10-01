@@ -7,21 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		185D6B94B7C75607E1F4361D /* Pods_LuckyXTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 495E669BB2230B920CA0D753 /* Pods_LuckyXTests.framework */; };
-		3DA612B921B0CF6600DF0F9C /* 卡通人物狂欢撒钱.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 3DA612B821B0CF6100DF0F9C /* 卡通人物狂欢撒钱.mp4 */; };
-		3DC9441721AD65DF0044C92D /* PickColorAnimationData.json in Resources */ = {isa = PBXBuildFile; fileRef = 3DC9441621AD65DE0044C92D /* PickColorAnimationData.json */; };
+		216542F2F5DBA088EB16C393 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 29A70A05C83C3A51EA0E7673 /* RealmSwift */; };
 		3DC9441A21AD70800044C92D /* 抽颜色方阵动画.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 3DC9441821AD6E780044C92D /* 抽颜色方阵动画.mp4 */; };
 		3DF28D5B21ABF2FC00BAEC0F /* EditPersonVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF28D5A21ABF2FC00BAEC0F /* EditPersonVC.swift */; };
 		3DF28D5D21ACD58F00BAEC0F /* EditPersonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF28D5C21ACD58F00BAEC0F /* EditPersonCell.swift */; };
-		3DF28D6221AD176D00BAEC0F /* textFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DF28D6121AD176D00BAEC0F /* textFile.m */; };
-		A9A91267067F1605A3BDADBC /* Pods_LuckyX.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A1AC9117AC1375AF72B1939 /* Pods_LuckyX.framework */; };
+		B4352D2FA7BD5737327F9463 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = A427A754CE0BBF6E60A08E48 /* RealmSwift */; };
 		CEA0757CE9C630AC03AEA7F3 /* LotteryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A23F856363D98E7B7DDB5DC /* LotteryTests.swift */; };
 		E14A0F7721A0F0450011779E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E14A0F7621A0F0450011779E /* AppDelegate.swift */; };
 		E14A0F7921A0F0450011779E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E14A0F7821A0F0450011779E /* ViewController.swift */; };
 		E14A0F7C21A0F0450011779E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E14A0F7A21A0F0450011779E /* Main.storyboard */; };
 		E14A0F8121A0F0470011779E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E14A0F7F21A0F0470011779E /* LaunchScreen.storyboard */; };
-		E1AD5A5121A1474900413E39 /* ImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1AD5A5021A1474900413E39 /* ImageViewExtension.swift */; };
-		E1AD5A5321A1475E00413E39 /* ImageHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1AD5A5221A1475E00413E39 /* ImageHelper.swift */; };
 		E1AD5A5521A1487600413E39 /* PrizeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1AD5A5421A1487600413E39 /* PrizeCell.swift */; };
 		E1AD5A5721A1575A00413E39 /* PersonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1AD5A5621A1575A00413E39 /* PersonCell.swift */; };
 		E1C1FF5A449265AED7E060EE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A85E58B8B8CC3DDA44272A8D /* Foundation.framework */; };
@@ -48,20 +43,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		00637A400033A89AD0906769 /* Pods-LuckyXTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LuckyXTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LuckyXTests/Pods-LuckyXTests.debug.xcconfig"; sourceTree = "<group>"; };
-		1A1AC9117AC1375AF72B1939 /* Pods_LuckyX.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LuckyX.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A23F856363D98E7B7DDB5DC /* LotteryTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LotteryTests.swift; sourceTree = "<group>"; };
-		3DA612B821B0CF6100DF0F9C /* 卡通人物狂欢撒钱.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "卡通人物狂欢撒钱.mp4"; sourceTree = "<group>"; };
-		3DC9441621AD65DE0044C92D /* PickColorAnimationData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = PickColorAnimationData.json; sourceTree = "<group>"; };
 		3DC9441821AD6E780044C92D /* 抽颜色方阵动画.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "抽颜色方阵动画.mp4"; sourceTree = "<group>"; };
 		3DF28D5A21ABF2FC00BAEC0F /* EditPersonVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditPersonVC.swift; sourceTree = "<group>"; };
 		3DF28D5C21ACD58F00BAEC0F /* EditPersonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditPersonCell.swift; sourceTree = "<group>"; };
-		3DF28D6021AD176C00BAEC0F /* LuckyX-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LuckyX-Bridging-Header.h"; sourceTree = "<group>"; };
-		3DF28D6121AD176D00BAEC0F /* textFile.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = textFile.m; sourceTree = "<group>"; };
-		495E669BB2230B920CA0D753 /* Pods_LuckyXTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LuckyXTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		5E6ED3BC829DE35D67A81632 /* Pods-LuckyX.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LuckyX.release.xcconfig"; path = "Pods/Target Support Files/Pods-LuckyX/Pods-LuckyX.release.xcconfig"; sourceTree = "<group>"; };
-		9E4A40ED88D42E76C6228FDE /* Pods-LuckyXTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LuckyXTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LuckyXTests/Pods-LuckyXTests.release.xcconfig"; sourceTree = "<group>"; };
-		A673BF34799168A9857F064A /* Pods-LuckyX.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LuckyX.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LuckyX/Pods-LuckyX.debug.xcconfig"; sourceTree = "<group>"; };
 		A85E58B8B8CC3DDA44272A8D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		E14A0F7321A0F0450011779E /* LuckyX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LuckyX.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E14A0F7621A0F0450011779E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -69,8 +54,6 @@
 		E14A0F7B21A0F0450011779E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E14A0F8021A0F0470011779E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E14A0F8221A0F0470011779E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E1AD5A5021A1474900413E39 /* ImageViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewExtension.swift; sourceTree = "<group>"; };
-		E1AD5A5221A1475E00413E39 /* ImageHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageHelper.swift; sourceTree = "<group>"; };
 		E1AD5A5421A1487600413E39 /* PrizeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrizeCell.swift; sourceTree = "<group>"; };
 		E1AD5A5621A1575A00413E39 /* PersonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonCell.swift; sourceTree = "<group>"; };
 		E1C36FCE21A5B9DA0019DEFC /* LeftPersonCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeftPersonCell.swift; sourceTree = "<group>"; };
@@ -92,7 +75,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E1C1FF5A449265AED7E060EE /* Foundation.framework in Frameworks */,
-				185D6B94B7C75607E1F4361D /* Pods_LuckyXTests.framework in Frameworks */,
+				B4352D2FA7BD5737327F9463 /* RealmSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -100,24 +83,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A9A91267067F1605A3BDADBC /* Pods_LuckyX.framework in Frameworks */,
+				216542F2F5DBA088EB16C393 /* RealmSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		58581A26500EAC2E22906872 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				A673BF34799168A9857F064A /* Pods-LuckyX.debug.xcconfig */,
-				5E6ED3BC829DE35D67A81632 /* Pods-LuckyX.release.xcconfig */,
-				9E4A40ED88D42E76C6228FDE /* Pods-LuckyXTests.release.xcconfig */,
-				00637A400033A89AD0906769 /* Pods-LuckyXTests.debug.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 		901CD67014BEEC4F396E0D6E /* iOS */ = {
 			isa = PBXGroup;
 			children = (
@@ -138,12 +110,9 @@
 		E14A0F6A21A0F0450011779E = {
 			isa = PBXGroup;
 			children = (
-				3DC9441621AD65DE0044C92D /* PickColorAnimationData.json */,
-				3DA612B821B0CF6100DF0F9C /* 卡通人物狂欢撒钱.mp4 */,
 				3DC9441821AD6E780044C92D /* 抽颜色方阵动画.mp4 */,
 				E14A0F7521A0F0450011779E /* LuckyX */,
 				E14A0F7421A0F0450011779E /* Products */,
-				58581A26500EAC2E22906872 /* Pods */,
 				F8A51987CC1268C909505545 /* Frameworks */,
 				C7E1E16FFA7AA09293E4E66E /* LuckyXTests */,
 			);
@@ -170,14 +139,10 @@
 				E14A0F7A21A0F0450011779E /* Main.storyboard */,
 				E14A0F7F21A0F0470011779E /* LaunchScreen.storyboard */,
 				E14A0F8221A0F0470011779E /* Info.plist */,
-				E1AD5A5021A1474900413E39 /* ImageViewExtension.swift */,
-				E1AD5A5221A1475E00413E39 /* ImageHelper.swift */,
 				E1AD5A5421A1487600413E39 /* PrizeCell.swift */,
 				E1AD5A5621A1575A00413E39 /* PersonCell.swift */,
 				3DF28D5C21ACD58F00BAEC0F /* EditPersonCell.swift */,
-				3DF28D6121AD176D00BAEC0F /* textFile.m */,
 				E1F7BEFA21BCDAE700E18587 /* Assets.xcassets */,
-				3DF28D6021AD176C00BAEC0F /* LuckyX-Bridging-Header.h */,
 				E1F7BEF621BC175100E18587 /* LotteryModeSettingVC.swift */,
 				E1F7BEF821BCAB7100E18587 /* LotteryModeSettingCell.swift */,
 				E1F7BEFC21BCDBE200E18587 /* LotteryModeAddVC.swift */,
@@ -191,9 +156,7 @@
 		F8A51987CC1268C909505545 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				1A1AC9117AC1375AF72B1939 /* Pods_LuckyX.framework */,
 				901CD67014BEEC4F396E0D6E /* iOS */,
-				495E669BB2230B920CA0D753 /* Pods_LuckyXTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -205,7 +168,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AF3A5C569371CDC1C645F540 /* Build configuration list for PBXNativeTarget "LuckyXTests" */;
 			buildPhases = (
-				EF072B32EDCE0AC51E87ABE9 /* [CP] Check Pods Manifest.lock */,
 				2DA0B1FC76151E33212CC824 /* Sources */,
 				ACB0AE443F98A5887D71A0AB /* Frameworks */,
 				CAD1D9285667A14CD929F7A0 /* Resources */,
@@ -216,6 +178,9 @@
 				DFEB39F8187B9C74199BA1DC /* PBXTargetDependency */,
 			);
 			name = LuckyXTests;
+			packageProductDependencies = (
+				A427A754CE0BBF6E60A08E48 /* RealmSwift */,
+			);
 			productName = LuckyXTests;
 			productReference = F96B6B353F12B1BAD2370D32 /* LuckyXTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -224,17 +189,18 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E14A0F8521A0F0470011779E /* Build configuration list for PBXNativeTarget "LuckyX" */;
 			buildPhases = (
-				06D038AAE5A588968B56F4E0 /* [CP] Check Pods Manifest.lock */,
 				E14A0F6F21A0F0450011779E /* Sources */,
 				E14A0F7021A0F0450011779E /* Frameworks */,
 				E14A0F7121A0F0450011779E /* Resources */,
-				828F3218DF59D6C1A2BCE2A8 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = LuckyX;
+			packageProductDependencies = (
+				29A70A05C83C3A51EA0E7673 /* RealmSwift */,
+			);
 			productName = LuckyX;
 			productReference = E14A0F7321A0F0450011779E /* LuckyX.app */;
 			productType = "com.apple.product-type.application";
@@ -264,6 +230,9 @@
 				Base,
 			);
 			mainGroup = E14A0F6A21A0F0450011779E;
+			packageReferences = (
+				4F7EE186C5966C84D7D3118F /* XCRemoteSwiftPackageReference "realm-swift" */,
+			);
 			productRefGroup = E14A0F7421A0F0450011779E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -286,76 +255,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3DA612B921B0CF6600DF0F9C /* 卡通人物狂欢撒钱.mp4 in Resources */,
 				3DC9441A21AD70800044C92D /* 抽颜色方阵动画.mp4 in Resources */,
 				E14A0F8121A0F0470011779E /* LaunchScreen.storyboard in Resources */,
 				E14A0F7C21A0F0450011779E /* Main.storyboard in Resources */,
 				E1F7BEFB21BCDAE900E18587 /* Assets.xcassets in Resources */,
-				3DC9441721AD65DF0044C92D /* PickColorAnimationData.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		06D038AAE5A588968B56F4E0 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-LuckyX-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		828F3218DF59D6C1A2BCE2A8 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-LuckyX/Pods-LuckyX-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-LuckyX/Pods-LuckyX-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LuckyX/Pods-LuckyX-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		EF072B32EDCE0AC51E87ABE9 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-LuckyXTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2DA0B1FC76151E33212CC824 /* Sources */ = {
@@ -381,13 +288,10 @@
 				E1F7BEF721BC175100E18587 /* LotteryModeSettingVC.swift in Sources */,
 				E1C36FD321A5B9DB0019DEFC /* PersonListVC.swift in Sources */,
 				E14A0F7921A0F0450011779E /* ViewController.swift in Sources */,
-				E1AD5A5121A1474900413E39 /* ImageViewExtension.swift in Sources */,
-				3DF28D6221AD176D00BAEC0F /* textFile.m in Sources */,
 				E1C36FD221A5B9DB0019DEFC /* RightPersonCell.swift in Sources */,
 				3DF28D5D21ACD58F00BAEC0F /* EditPersonCell.swift in Sources */,
 				E1F7BEFD21BCDBE200E18587 /* LotteryModeAddVC.swift in Sources */,
 				E14A0F7721A0F0450011779E /* AppDelegate.swift in Sources */,
-				E1AD5A5321A1475E00413E39 /* ImageHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -424,7 +328,6 @@
 /* Begin XCBuildConfiguration section */
 		024E360340EEAE60F292999F /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 00637A400033A89AD0906769 /* Pods-LuckyXTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -441,7 +344,6 @@
 		};
 		D655ACF91C2C2F8F4B213D54 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9E4A40ED88D42E76C6228FDE /* Pods-LuckyXTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -575,7 +477,6 @@
 		};
 		E14A0F8621A0F0470011779E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A673BF34799168A9857F064A /* Pods-LuckyX.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -588,7 +489,6 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.xwn.LuckyX;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "LuckyX/LuckyX-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 2;
@@ -597,7 +497,6 @@
 		};
 		E14A0F8721A0F0470011779E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5E6ED3BC829DE35D67A81632 /* Pods-LuckyX.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -610,7 +509,6 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.xwn.LuckyX;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "LuckyX/LuckyX-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 2;
 			};
@@ -647,6 +545,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		4F7EE186C5966C84D7D3118F /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-swift.git";
+			requirement = {
+				kind = exactVersion;
+				version = 20.0.6;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		29A70A05C83C3A51EA0E7673 /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4F7EE186C5966C84D7D3118F /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
+		};
+		A427A754CE0BBF6E60A08E48 /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4F7EE186C5966C84D7D3118F /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = E14A0F6B21A0F0450011779E /* Project object */;
 }
