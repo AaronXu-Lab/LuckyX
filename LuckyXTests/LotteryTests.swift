@@ -18,6 +18,37 @@ final class LotteryTests: XCTestCase {
         Realm.Configuration.defaultConfiguration = previousConfiguration
     }
 
+    func testSampleParticipantsCoverAllModesAndAreOnlyInstalledOnce() throws {
+        let suite = "LuckyXTests." + UUID().uuidString
+        let defaults = UserDefaults(suiteName: suite)!
+        defer { defaults.removePersistentDomain(forName: suite) }
+        try SampleParticipants.installIfNeeded(in: realm, defaults: defaults)
+        let people = realm.objects(Person.self)
+        XCTAssertEqual(people.count, 180)
+        XCTAssertEqual(Set(people.map(\.number)).count, 180)
+        for color in ["红", "绿", "黄", "蓝", "紫", "粉"] {
+            XCTAssertEqual(people.filter("color = %@ AND isAvailable = true", color).count, 30)
+        }
+        XCTAssertEqual(people.filter("wish != '未填写心愿'").count, 150)
+        XCTAssertEqual(defaults.string(forKey: "UserDefaultEditPerson")?.split(separator: "\n").count, 180)
+        try SampleParticipants.installIfNeeded(in: realm, defaults: defaults)
+        XCTAssertEqual(people.count, 180)
+        try realm.write { realm.delete(people) }
+        try SampleParticipants.installIfNeeded(in: realm, defaults: defaults)
+        XCTAssertTrue(people.isEmpty)
+    }
+
+    func testSampleParticipantsPreserveExistingPeopleAndEditorContents() throws {
+        try addPeople()
+        let suite = "LuckyXTests." + UUID().uuidString
+        let defaults = UserDefaults(suiteName: suite)!
+        defer { defaults.removePersistentDomain(forName: suite) }
+        defaults.set("已有名单", forKey: "UserDefaultEditPerson")
+        try SampleParticipants.installIfNeeded(in: realm, defaults: defaults)
+        XCTAssertEqual(realm.objects(Person.self).count, 3)
+        XCTAssertEqual(defaults.string(forKey: "UserDefaultEditPerson"), "已有名单")
+    }
+
     private func addPeople() throws {
         try realm.write {
             for number in 1...3 {

@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import RealmSwift
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -15,7 +16,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        do {
+            try SampleParticipants.installIfNeeded(in: Realm(), defaults: .standard)
+        } catch {
+            NSLog("无法初始化示例名单：%@", error.localizedDescription)
+        }
         UIApplication.shared.statusBarStyle = UIStatusBarStyle.lightContent
         return true
     }
@@ -49,4 +54,41 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 // The storyboard supplies the window and root controller for this scene.
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     var window: UIWindow?
+}
+
+/// Fictional participants for trying every lottery mode on a fresh installation.
+enum SampleParticipants {
+    static let installationKey = "SampleParticipantsInstalledV1"
+
+    static func installIfNeeded(in realm: Realm, defaults: UserDefaults) throws {
+        guard !defaults.bool(forKey: installationKey) else { return }
+        guard realm.objects(Person.self).isEmpty,
+              realm.objects(Prize.self).isEmpty,
+              defaults.string(forKey: "UserDefaultEditPerson") == nil else {
+            defaults.set(true, forKey: installationKey)
+            return
+        }
+        let colors = ["红", "绿", "黄", "蓝", "紫", "粉"]
+        let wishes = ["想要一副耳机", "想要一个行李箱", "想去旅行", "想要机械键盘", "想要运动手表"]
+        var people: [Person] = []
+        var lines: [String] = []
+        for (colorIndex, color) in colors.enumerated() {
+            for index in 1...30 {
+                let person = Person()
+                person.name = "测试\(color)队\(String(format: "%02d", index))"
+                let serial = colorIndex * 30 + index
+                // Exercise numeric, S-prefixed, and IN-prefixed employee numbers.
+                let prefix = ["8", "S", "IN"][(index - 1) % 3]
+                let displayedNumber = prefix + String(format: "%04d", serial)
+                person.number = Int(displayedNumber.replacingOccurrences(of: "S", with: "7").replacingOccurrences(of: "IN", with: "6"))!
+                person.color = color
+                person.wish = index % 6 == 0 ? "未填写心愿" : wishes[(index - 1) % wishes.count]
+                people.append(person)
+                lines.append("\(person.name) \(color) \(displayedNumber) \(person.wish)")
+            }
+        }
+        try realm.write { realm.add(people) }
+        defaults.set(lines.joined(separator: "\n"), forKey: "UserDefaultEditPerson")
+        defaults.set(true, forKey: installationKey)
+    }
 }
